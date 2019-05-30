@@ -4,106 +4,142 @@ title: Create Products Table
 nav_order: 3
 ---
 
-# Add Data to the App
+# Create your first Quick Base Table
 
-Now it’s time to get the data into the app.  Data is stored in tables.  Tables are like spreadsheets, but better.  You can use them in a way that greatly reduces data entry and maintenance.  
+Now it’s time to get the data into the app, data is stored in tables.  Tables are like spreadsheets, but better.  You can use them in a way that greatly reduces data entry and maintenance.  
 
-## Create a Products Table
+## Review the product list spreadsheet
 
-Drew's `ProductList.xlsx` spreadsheet has three columns:  Product #, Product Name, and Unit Price. Here’s a look at the first four records in the spreadsheet.  
+The first step when creating a new Quick Base app is to understand the data that we are working with. In our case, Drew provided us with three spreadsheet files, and since our first goal is to correct a product name let's start with the Product List spreadsheet. Opening the `ProductList.xlsx` file, we see that it has data in three columns and each column name is stored in the first row.
+
+Open the spreadsheet and take a look at what what is stored inside.  
 
 ![](assets/images/prodTable.png)
 
-Begin by creating a table to contain the product list data. 
+Reviewing the spreadsheet, you write down the following notes:
 
-![](assets/images/newTableBtn.png)  
+| Column | Meaning | Type |
+|:-|:-|:-|
+| Product # | The product SKU | text |
+| Product Name | The name of the product | text |
+| Unit Price | The price | currency |
 
-~~~
-    1. Select + New Table.  
-    2. Select From scratch - Design your own table.
-    3. Name the table Products.
-    4. Set A single record is called a to Product.
-    5. Select an icon to represent your table. 
-    6. Provide a description such as List of products we sell.
-    7. Select Create.
-~~~
+In Quick Base, you first describe what a table is going to store before we fill it with data. Let's take what we learned from the spreadsheet and configure a table to hold the product information.
 
 ![](assets/images/newTable.png)
 
-Next add the fields of the table.  These correlate to the column headings in the spreadsheet. 
+~~~
+    1. Click the `New Table` button from the navigation bar
+    2. Click `From scratch - Design your own table`
+    3. Name the table: Products
+    4. A single record is called a: Product
+    5. Select an icon to represent your table - we chose the hand cart
+    6. Provide a description: List of products we sell
+    7. Click the `Create` button
+~~~
 
-~~~
-    1. Enter field labels Product Name, Product #, and Unit Price. 
-    2. Set the data types Text, Text, Numeric-Currency, respectively, as shown above.
-    3. Select Add. 
-~~~
+Creating the table is the first half of the process, now we have to describe the data that the table will hold. Add fields to the table based on what we observed in Drew's spreadsheet.  
 
 ![](assets/images/newFields.png)
 
-## Congratulations! 
-You have designed the first table in this app.  You added three fields and Quick Base added some standard fields that are added to every new table, such as Record ID.  
+~~~
+    1. Fill in a `Field Label` for each of the column names from the spreadsheet
+    2. Select the data type for each field based on what we observed
+    3. Click the `Add` button
+~~~
 
-Soon you will upload the data from the Products List spreadsheet into the table.  Imagine what would happen if you accidently uploaded that same spreadsheet with the same list of products into the app a second time!  Would every product appear in the table twice, as shown here?
+<div markdown="span" style="padding: 1.25rem; margin-top: 1.25rem; margin-bottom: 1.25rem; border: 1px solid #eee; border-left-width: .25rem; border-radius: .25rem; border-left-color: #7253ed;" >
+**Congratulations!** You created the first table in this app.
+</div>
+
+## Add a Product Using the + New Product Button
+
+Before importing data from spreadsheets, let's test out the structure of your table manually. Add one product to the product table using the button Quick Base added when you created the table:
+
+~~~
+    1. Select `New Product`  
+    2. Type product name: Flash Drive 64GB
+    3. Type product #: FD0064
+    4. Type unit price: 12.99
+    5. Click Save & Close
+~~~
+
+Success! Now we are ready to get the rest of the products into the table and correct the product name. 
+
+## Import the Products Spreadsheet
+
+You prepared a table to hold the product information and added a product to the table by hand, now, let's import the rest of the products from the ProductList.xlsx file that Drew gave us:
+
+~~~
+    1. Click the Products table icon to view the homepage for this table  
+    2. In the top right section of the page, select `More>Import/Export`
+    3. In Choose Action, select `Import into a table from a file` 
+    4. Confirm `Select Merge Field is set to Product #`
+    5. _Without detailed instructions, upload the copy of Product List.xlsx you saved to your computer._  I don't understand this.
+~~~
+
+TODO
+{: .label .label-red}
+Screenshot
+
+After you selected `Import From File`, the system displays a warning alerting you that importing data into a table that already contains data may update existing records. We know that there is only 1 product in the table – the flash drive you entered above. This product is not in Drew's spreadsheet, so no items will be updated. Select OK.
+
+The next dialogue displays a preview of your data and acts like a staging area.
+
+![](assets/images/importProdcuts.png)
+
+This is our checklist to ensure that the data will import into the table the way that we want it to.
+
+    1. Quick Base recognized that the spreadsheet contained field names and inserted those values in FIELD LABELS Row 1 of the table
+    2. Quick Base assumed the spreadsheet data could be imported into existing fields 
+    3. Click Import (with Update). 
+
+TODO
+{: .label .label-red}
+Screenshot
+
+Finally, a dialogue shows the results: 15 rows were read, 15 records were added, no records were updated, and there were no data rows with errors. **Success!**
+
+Now, imagine what would happen if you accidentally uploaded that same spreadsheet with the same list of products into the app a second time ... would every product appear in the table twice, like shown here?
 
 ![](assets/images/dupData.png)
 
-No, because Quick Base requires each table to include one field that contains a unique value for each record, called the key field. This field ensures that records that are identical in every other way always have a unique identifier. If the upload of data contains the same value of an item in the key field, it will update, vs. add, the record.  In our example, if Product # is the key field and the table already contains a record with Product # QC2019, it will not add another record with this value during an upload.  Instead, it will update the existing record.  This is a convenient way to quickly update values of many existing records, such as when you need to update pricing.
+YUP! (...and we don't want that!) Quick Base requires that each table contains one field to use as a unique value for each record, this field is called the _key field_. If the uploaded data contains the same value of an item in the key field, it will update, vs. add, the record.  In our example, if Product # is the key field and the table already contains a record with `Product #` QC2019, Quick Base will not add another record with this value during an upload.  Instead, it will update the existing record.  This is a convenient way to quickly update values of many existing records, such as when you need to update pricing.
 
-By default, Quick Base automatically creates a Record ID# field for every table and sets it as the key field.  This is useful if your data does not contain a field that will always contain unique values.  But in our example, Product # is always unique, so make that the key field:
+By default, Quick Base automatically creates a `Record ID#` field for every table and sets it as the key field.  This is useful if your data does not contain a field that will always contain unique values.  But because our Product # is always unique SKU, we can make that the key field and avoid duplicate entries in the future.
+
+Here's how:
+
+TODO
+{: .label .label-red}
+Describe how to get here
 
 ![](assets/images/keyField.png)
 
 ~~~
-    1. Select the checkbox for Product #.
-    2. Select Set Key.
+    1. Check the checkbox for Product #
+    2. Click `Set Key`
     3. Follow the prompts (not shown above) to confirm this change. 
        The key icon should now be beside the  Product # field.  
-    4. Select Exit Settings in the top left section of the screen.
+    4. Click `Exit Settings` in the top left section of the screen.
 ~~~
 
-You can now add data to the Products table. 
-
-## Add a Product Using the + New Product Button
-
-Add a Product Using the + New Product Button
-Before importing data from spreadsheets, experience what it’s like to add data using the button in the user interface. Add one product to the product table using the convenient button Quick Base added when you created the table:
-
-~~~
-    1. Select + New Product.  
-    2. Type product name Flash Drive 64GB.
-    3. Type product # FD0064.
-    4. Type unit price 12.99.
-    5. Select Save & Close.
-~~~
-
-## Import Products from the File
-
-Now import the rest of the products from the Product List.xlsx file you saved earlier:
-
-~~~
-    1. Select the Products table icon to view the homepage for this table.  
-    2. In the top right section of the page, select More>Import/Export.
-    3. In Choose Action, select Import into a table from a file. 
-    4. Confirm Select Merge Field is set to Product #.
-    5. Without detailed instructions, upload the copy of Product List.xlsx you saved to your computer. 
-~~~
-
-After you select Import From File…the system displays a warning alerting you that importing data into a table that already contains data may update existing records. In this exercise, there is only 1 product in the table – the flash drive you entered above. This product is not in the spreadsheet, so no items will be updated. Select OK.
-
-![](assets/images/importProdcuts.png)
-
-The next page displays a preview of your data and acts like a staging area.
-
-1.	Quick Base recognized that the spreadsheet contained field names and inserted those values in FIELD LABELS Row 1 of the table. If this wasn’t correct, you could make the correction now, before the import. But this is correct, so leave First Row is List of Field Names checked. 
-2.	Quick Base assumed the spreadsheet data could be imported into existing fields. If this wasn’t correct, you could select Do Not Import or Create New Field. However, this is correct, so leave the radio buttons To Existing Field checked. 
-3.	Select Import (with Update). 
-
-A page shows the results: 14 rows were read, 14 records were added, no records were updated, and there were no data rows with errors. Success!
+Your future self will thank you for setting this up now. 
 
 ## View the Table Report
 
-Select the Products table icon to view the homepage for this table.  
+Ok, almost done with the Products table. Our last step is to take a look what is there and update that pesky wrong product name! Start by clicking the the Products table icon to view the homepage for this table.  
 
-Notice Quick Base has created a report for you automatically. How thoughtful! It includes all the products you imported and the flash drive you entered in the user interface.
+TODO
+{: .label .label-red}
+Screenshot
+
+TODO
+{: .label .label-red}
+Provide the instructions to edit the product name here and remove it from the order form design page. 
+
+TODO
+{: .label .label-red}
+Summary
 
 [Next](createOrders.html){: .btn .btn-purple }
