@@ -4,21 +4,43 @@ title: Create an App
 nav_order: 2
 ---
 
-# Create Your App
+# What is Quick Base
 
-Although you don’t know how to write code, you hear that Quick Base is easy to use.  You sign into the Quick Base Builder Program with your username and password, and begin creating an app to achieve the objectives noted in the previous section. 
+TODO
+{: .label .label-red}
+... QB elevator pitch, approach, value prop, and philosophy
+
+## Quick Base Builder Account
+
+TODO
+{: .label .label-red}
+... orientation
+
+## Create Your App
+
+Your friend sent you a link to the Quick Base web site and you found your way to the builder program where you can try building applications using a free builder account and subscription plan. After signing up and verifying your email address, you log into the Quick Base builder domain that was provided in your welcome email and are greeted with an opportunity to create your first app. 
+
+<blockquote>
+<b>Note:</b> If you have not already closed the welcome dialogue, please close it and follow the instructions below to create your app.
+</blockquote>
+
+The `My Apps` page in Quick Base is the central repository for all of the apps that you create or have access to. You can always return here by clicking the **My Apps** tab in the navigation bar. 
+
+![](assets/images/myApps.png)
+
+Let's take the plunge and create our first app:
 
 ~~~
-    1. From the My Apps page, select + Create new app.  
-    2. Select Start from scratch and select Next.
-    3. Name the app Order Tracking App.
-    4. Provide a description such as Enter and Track Customer Orders.
-    5. Select an icon to represent your app.
-    6. Select a color of your choice for the app icon.
-    7. Select Create app.
+    1. From the My Apps page, click the large `Create new app` button  
+    2. Select Start from scratch and select Next
+    3. Name the app `Order Tracking App`
+    4. Give the app a description: `Track Customer Orders`
+    5. Select an icon to represent your app
+    6. Select a color for the app
+    7. Select Create app
 ~~~
 
-The result should look like this:
+When your screen refreshes, the result should look like this:
 
 ![](/assets/images/newApp.png)
 

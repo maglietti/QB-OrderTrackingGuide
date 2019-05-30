@@ -11,14 +11,14 @@ TODO
 Welcome to Quick Base ...
 * Sign Up
 * Verfiy Email
-* Log in 
+* Log In 
 * Orientation
 
 ---
 
-## Guide Scenario
+## Scenario
 
-This guide walks you through the process of creating a basic order management application in Quick Base. There is already a process in place that you are taking over for Drew, who is moving to another position. Drew manages the process, enters data into spreadsheets, and is currently an integral part of the workflow in the office. The team has grown along with the success of the company and everyone wants to take this opportunity to evolve the manual process and remove the dependency on you to complete orders.
+This guide walks you through the process of creating a basic order management application in Quick Base. You are taking over for Drew who is moving to another position. Drew currently manages the process, enters data into spreadsheets, and is currently an integral part of the workflow in the office. The team has grown along with the success of the company and everyone wants to take this opportunity to evolve the manual process and remove the dependency on you to complete orders.
 
 Right now, every time an order comes in, the information is manually entered into several spreadsheets:  the order number, order date, customer name, product details, and quantity are all individually typed in every time. Drew keeps the spreadsheets on a laptop, making Drew a bottleneck for entering orders, providing status updates, or producing analytics for management.  
 
@@ -28,7 +28,7 @@ In addition to fixing the product name in the orders, during the morning meeting
 
 You recognize that the order management process has outgrown a manual spreadsheet based approach, so you set out to rebuild the process using Quick Base.  
 
-## Your goals
+## Goals
 
 To stay foced, you write out a few notes about what yo are setting out to accomplish. 
 
