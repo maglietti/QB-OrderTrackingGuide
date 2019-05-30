@@ -8,27 +8,35 @@ nav_order: 1
 
 TODO
 {: .label .label-red}
-Id cupidatat enim tempor labore qui elit commodo elit exercitation sunt. Et ex duis do nisi fugiat deserunt consectetur occaecat exercitation labore exercitation officia. Mollit elit aliqua mollit amet eu excepteur adipisicing aliquip consequat reprehenderit duis irure anim reprehenderit. Minim et et amet pariatur voluptate consectetur. Excepteur occaecat ut nostrud pariatur voluptate est culpa eu proident ullamco qui. Irure pariatur nulla fugiat laboris dolor exercitation sunt mollit commodo incididunt consequat qui in esse. Adipisicing deserunt pariatur ullamco nulla adipisicing esse dolore ex.
+Welcome to Quick Base ...
+* Sign Up
+* Verfiy Email
+* Log in 
+* Orientation
 
 ---
 
-## The Challenge
+## Guide Scenario
 
-Imagine you just started a new job managing order fulfillment.  You are taking over for Drew, who trained you how to manage customer orders.  Every time an order came in, Drew manually entered the information into spreadsheets:  the order number, order date, customer name, product details, and quantity.  Quite a time-consuming and error-prone manual process!  Even worse, only Drew had access to the spreadsheets, making Drew a bottleneck for entering orders or providing status updates and analytics to the team.  
+This guide walks you through the process of creating a basic order management application in Quick Base. There is already a process in place that you are taking over for Drew, who is moving to another position. Drew manages the process, enters data into spreadsheets, and is currently an integral part of the workflow in the office. The team has grown along with the success of the company and everyone wants to take this opportunity to evolve the manual process and remove the dependency on you to complete orders.
 
-On day one of your new role, your team members tell you that one of the product names is incorrect on all customer orders, causing confusion.  Some customers are cancelling their orders.  You investigate and learn that the source of the error is on the master product list, one of the spreadsheets Drew maintained.  Everyone agrees that correcting the product name on both the product list and all orders is a top priority. 
+Right now, every time an order comes in, the information is manually entered into several spreadsheets:  the order number, order date, customer name, product details, and quantity are all individually typed in every time. Drew keeps the spreadsheets on a laptop, making Drew a bottleneck for entering orders, providing status updates, or producing analytics for management.  
 
-Before you have a chance to do that, the Vice President asks you who are the top customers and the top selling products for Q2 of 2019. That information does not seem to be readily available, and it will take you some time to sort through the spreadsheets to get it. 
+Your team members tell you that one of the product names is incorrect on _all_ of the customer orders, and it is causing confusion.  Some customers are even cancelling their orders.  You investigate and learn that the source of the error is on the master product list, and instead of typing the information each time Drew has copy/pasted the product names into all of the orders.  Correcting the  product name in the product list and updating all of the existing orders is now your top priority.
 
-You know there must be a better way to get things done and realize this is an opportunity for you to make a major impact on the organization.  
+In addition to fixing the product name in the orders, during the morning meeting, management asked for a report of the top customers and the top selling products for Q2. That information is not readily available, and it will take you some time to sort through the spreadsheets to build the report.
 
-> You write down the following objectives:
+You recognize that the order management process has outgrown a manual spreadsheet based approach, so you set out to rebuild the process using Quick Base.  
 
-> 1. **Eliminate inefficiencies.** Enable team members to enter orders and make the process simple and intuitive.
-> 2. **Minimize effort to update data.** Find a way to correct the product name on both the product list and line items of all open orders quickly and easily.
-> 3. **Share access to reports.** Enable management to access up-to-date analytics from their own computer or mobile phone.
+## Your goals
 
-You’ve decided to create a Quick Base app to achieve these objectives.  You know you’ll need the data from Drew’s spreadsheets. Drew sent you a link to where the spreadsheets are online, all you have to do is download them and get started.   
+To stay foced, you write out a few notes about what yo are setting out to accomplish. 
+
+> 1. **Eliminate inefficiencies.** Make it so other team members can enter orders while making the process simple and intuitive.
+> 2. **Minimize effort to update data.** Find a way to correct product name in the product list and update the line items of all open orders.
+> 3. **Create and share reports.** Give management access to up-to-date reports from their own computer or mobile phone.
+
+Taking a recommendation from a friend, you decide to give Quick Base a try and see how well an App solves the problem. Drew sent you a link to where he posted the spreadsheets online, all you have to do is download them and get started.
 
 Click on the file names below to download Drew's spreadsheets to your computer. 
 
