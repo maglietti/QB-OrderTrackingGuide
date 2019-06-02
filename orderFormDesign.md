@@ -1,8 +1,20 @@
 ---
 layout: default
 title: Order Form Design
-nav_order: 8
+nav_order: 6
 ---
+
+## View an Order
+
+Check out the power of table relationships by viewing an order:
+
+~~~
+    1. Select the Orders table.  
+    2. Select order 444111 to view it. 
+    3. All three line items for this order are displayed.
+~~~
+
+Technically speaking, the order’s information is displayed on a form. The top of the form shows the fields for order number, customer name, and order date. The bottom of the form is a report that is pulling data from the Line Items table. Behind the scenes, Quick Base created this report and named it Embedded for Orders because it is embedded on the Orders form. The report is good, but notice that line items and quantities are not displayed. So you need to make a minor adjustment to this report. 
 
 # Order Form Design
 

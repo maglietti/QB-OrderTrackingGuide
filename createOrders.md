@@ -79,4 +79,7 @@ SCREENSHOT
 
 A page shows the results: 67 data rows were read, 67 new records were created, 0 existing records were updated, and there were 0 data rows with errors. The import was successful, and your app now contains the data from the OrderList.xlsx file. 
 
-[Next](createItems.html){: .btn .btn-purple }
+Summary
+{: .label .label-red}
+
+[Next](relationships.html){: .btn .btn-purple }

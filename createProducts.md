@@ -78,9 +78,8 @@ You prepared a table to hold the product information and added a product to the 
     5. _Without detailed instructions, upload the copy of Product List.xlsx you saved to your computer._  I don't understand this.
 ~~~
 
-TODO
-{: .label .label-red}
 Screenshot
+{: .label .label-red}
 
 After selecting `Import From File`, the system displays a warning alerting you that importing data into a table that already contains data may update existing records. We know that there is only 1 product in the table – the flash drive you entered above. This product is not in Drew's spreadsheet, so no items will be updated. Select OK.
 
@@ -94,9 +93,8 @@ This is our checklist to ensure that the data will import into the table the way
     2. Quick Base assumed the spreadsheet data could be imported into existing fields 
     3. Click Import (with Update). 
 
-TODO
-{: .label .label-red}
 Screenshot
+{: .label .label-red}
 
 Finally, a dialogue shows the results: 15 rows were read, 15 records were added, no records were updated, and there were no data rows with errors. **Success!**
 
@@ -110,9 +108,8 @@ By default, Quick Base automatically creates a `Record ID#` field for every tabl
 
 Here's how:
 
-TODO
-{: .label .label-red}
 Describe how to get here
+{: .label .label-red}
 
 ![](assets/images/keyField.png)
 
@@ -130,16 +127,13 @@ Your future self will thank you for setting this up now.
 
 Ok, almost done with the Products table. Our last step is to take a look what is there and update that pesky wrong product name! Start by clicking the the Products table icon to view the homepage for this table.  
 
-TODO
-{: .label .label-red}
 Screenshot
-
-TODO
 {: .label .label-red}
-Provide the instructions to edit the product name here and remove them from the order form design page. 
 
-TODO
+Provide the instructions to edit the product name here and remove them from the order form design page.
 {: .label .label-red}
+
 Summary
+{: .label .label-red}
 
 [Next](createOrders.html){: .btn .btn-purple }
