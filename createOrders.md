@@ -4,15 +4,31 @@ title: Create Orders Table
 nav_order: 4
 ---
 
-# Create an Orders Table
+# Storing data in a database
 
-The Order List.xlsx spreadsheet has three columns: Order Date, Customer Name, and Order Number. Here’s a look at the first four records in the spreadsheet. 
+Quick Base allows you to store all of this information in one place arranged in tables. This way any piece of information in one table can be used to represent information in another table. We call this related data. When Drew started, all of the information was stored in one spreadsheet. Over time the spreadsheet became too large and Drew started to break it down into smaller spreadsheets. Drew aligned the spreadsheets with the tasks in the order process and stored just the data required for that task in a table. If information is needed from an earlier step in the process, Drew finds it and copy's it to the other spreadsheet.
+
+Here is how Drew broke the master spreadsheet into smaller pieces and which table we need to create.
+
+| Task | Action | Spreadsheet | Table | 
+|:-----|:-------|:------------|:------|
+| Add a product | Collect the information needed to sell a product | ProductList.xlsx | Products |
+| Create an order | Start a new order and register it in the system | OrderList.xlsx | Orders | 
+| Add item to order | List the items delivered in the order | LineItems.xlsx | Order Items |
+
+## Review the orders spreadsheet
+
+Moving through Drew's spreadsheets, the next in line is the `OrderList.xlsx` spreadsheet. Again, we'll start by taking a look at the spreadsheet and understanding what is stored inside. Open the `OrdersList.xlsx` file and take notes about its structure.
 
 ![](assets/images/ordersTable.png)
 
-You may wonder if you must add a new table in the app for this data, or if you can add it to an existing table. This is a question you must answer for any data you will track in your app. To decide, you should ask yourself two questions: Do I track many of these? Do I track many things about these? If the answer is yes to both, then create a table. 
+Reviewing the spreadsheet, you write down the following notes:
 
-In this example, the answer is yes to both. You track many orders, and you track many things about them – order date, customer name, and order #. So create a table to contain the order data:
+| Column | Meaning | Type |
+|:-|:-|:-|
+| Order Date | The date that the order was placed | date |
+| Customer Name | The customer's name| text |
+| Order Number | The order number | text |
 
 ~~~
     1. Select + New Table.  
@@ -24,7 +40,7 @@ In this example, the answer is yes to both. You track many orders, and you track
     7. Select Create.
 ~~~
 
-Next add the fields of the table. These correlate to the column headings in the spreadsheet. 
+Ok, now add the fields of the table.
 
 ![](assets/images/ordersFields.png)
 
@@ -47,18 +63,20 @@ Next change the key field of this table. You did this for the products table, bu
 
 ## Import Orders from the File
 
-Now import the orders from the Order List.xlsx file you saved earlier:
+Fineally, import the orders from the OrderList.xlsx file you saved earlier. Just like before, the import dialogue box opens and gives you the opportunity to verify that the data will stored correctly. Review the information and import your data.
+
+SCREENSHOT
+{: .label .label-red}
 
 ~~~
-    1. From the Orders table homepage, select More > Import/Export.
-    2. Select Import into a table from a file.
-    3. Confirm Select Table is set to Orders and Select Merge Field is set to Order #.
-    4. Without detailed instructions, upload the copy of Order List.xlsx you saved to your computer.
-    5. The system displays a warning. Select OK.
+    1. From the Orders table homepage, select More > Import/Export
+    2. Select Import into a table from a file
+    3. Confirm Select Table is set to Orders and Select Merge Field is set to Order #
+    4. Review how each field will be imported to ensure it is correct
+    5. Click the Import button
+    5. Like before, review the warning and click OK
 ~~~
 
-A preview of your data is displayed. As before, Quick Base has made the correct assumptions about how to import the data, so no changes are needed. Select Import (with Update). 
-
-A page shows the results: 67 data rows were read, 67 new records were created, 0 existing records were updated, and there were 0 data rows with errors. The import was successful, and your app now contains the data from the Order List.xlsx file. 
+A page shows the results: 67 data rows were read, 67 new records were created, 0 existing records were updated, and there were 0 data rows with errors. The import was successful, and your app now contains the data from the OrderList.xlsx file. 
 
 [Next](createItems.html){: .btn .btn-purple }

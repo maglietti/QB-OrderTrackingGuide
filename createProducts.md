@@ -4,9 +4,9 @@ title: Create Products Table
 nav_order: 3
 ---
 
-# Create your first Quick Base Table
+# Create your first Quick Base table
 
-Now it’s time to get the data into the app, data is stored in tables.  Tables are like spreadsheets, but better.  You can use them in a way that greatly reduces data entry and maintenance.  
+Now it’s time to get the data into the app, data is stored in tables.  Tables are like spreadsheets, but better.  Understanding how tables work is the first step in your journy to create solutions with Quick Base.  
 
 ## Review the product list spreadsheet
 
@@ -82,7 +82,7 @@ TODO
 {: .label .label-red}
 Screenshot
 
-After you selected `Import From File`, the system displays a warning alerting you that importing data into a table that already contains data may update existing records. We know that there is only 1 product in the table – the flash drive you entered above. This product is not in Drew's spreadsheet, so no items will be updated. Select OK.
+After selecting `Import From File`, the system displays a warning alerting you that importing data into a table that already contains data may update existing records. We know that there is only 1 product in the table – the flash drive you entered above. This product is not in Drew's spreadsheet, so no items will be updated. Select OK.
 
 The next dialogue displays a preview of your data and acts like a staging area.
 
@@ -136,7 +136,7 @@ Screenshot
 
 TODO
 {: .label .label-red}
-Provide the instructions to edit the product name here and remove it from the order form design page. 
+Provide the instructions to edit the product name here and remove them from the order form design page. 
 
 TODO
 {: .label .label-red}

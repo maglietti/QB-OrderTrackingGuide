@@ -4,25 +4,13 @@ title: Create an App
 nav_order: 2
 ---
 
-# What is Quick Base
-
-TODO
-{: .label .label-red}
-... QB elevator pitch, approach, value prop, and philosophy
-
-## Quick Base Builder Account
-
-TODO
-{: .label .label-red}
-... orientation
-
 ## Create Your App
 
 Your friend sent you a link to the Quick Base web site and you found your way to the builder program where you can try building applications using a free builder account and subscription plan. After signing up and verifying your email address, you log into the Quick Base builder domain that was provided in your welcome email and are greeted with an opportunity to create your first app. 
 
-<blockquote>
-<b>Note:</b> If you have not already closed the welcome dialogue, please close it and follow the instructions below to create your app.
-</blockquote>
+<div markdown="span" style="padding: 1.25rem; margin-top: 1.25rem; margin-bottom: 1.25rem; border: 1px solid #eee; border-left-width: .25rem; border-radius: .25rem; border-left-color: #7253ed;" >
+<b>Note:</b> Please log into your Quick Base account and open the application in another window so that you can easily go between this guide and Quick Base. If you have not already done so, please close all dialogues and navigatet to the **My Apps** tab. 
+</div>
 
 The `My Apps` page in Quick Base is the central repository for all of the apps that you create or have access to. You can always return here by clicking the **My Apps** tab in the navigation bar. 
 

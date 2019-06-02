@@ -4,21 +4,13 @@ title: Overview
 nav_order: 1
 ---
 
-# Getting Started with Quick Base
+# Welcome
 
-TODO
-{: .label .label-red}
-Welcome to Quick Base ...
-* Sign Up
-* Verfiy Email
-* Log In 
-* Orientation
-
----
+Hello and welcome to the Quick Base getting started guide. This guide walks you through the process of creating a basic order management application in Quick Base. As you progress through the guide, you will experience the process of app creation while learning key concepts and skills. 
 
 ## Scenario
 
-This guide walks you through the process of creating a basic order management application in Quick Base. You are taking over for Drew who is moving to another position. Drew currently manages the process, enters data into spreadsheets, and is currently an integral part of the workflow in the office. The team has grown along with the success of the company and everyone wants to take this opportunity to evolve the manual process and remove the dependency on you to complete orders.
+You are taking over for Drew who is moving to another position. Drew currently manages the process, enters data into spreadsheets, and is currently an integral part of the workflow in the office. The team has grown along with the success of the company and everyone wants to take this opportunity to evolve the manual process and remove the dependency on you to complete orders.
 
 Right now, every time an order comes in, the information is manually entered into several spreadsheets:  the order number, order date, customer name, product details, and quantity are all individually typed in every time. Drew keeps the spreadsheets on a laptop, making Drew a bottleneck for entering orders, providing status updates, or producing analytics for management.  
 
