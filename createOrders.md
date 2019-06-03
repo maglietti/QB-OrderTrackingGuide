@@ -6,9 +6,9 @@ nav_order: 4
 
 # Storing data in a database
 
-Quick Base allows you to store all of this information in one place arranged in tables. This way any piece of information in one table can be used to represent information in another table. We call this related data. When Drew started, all of the information was stored in one spreadsheet. Over time the spreadsheet became too large and Drew started to break it down into smaller spreadsheets. Drew aligned the spreadsheets with the tasks in the order process and stored just the data required for that task in a table. If information is needed from an earlier step in the process, Drew finds it and copy's it to the other spreadsheet.
+Quick Base allows you to store all of the information in one app arranged in tables. This way, a piece of information in one table is easily used to represent information in another table. We call this related data. When Drew started, all of the order information was stored in one spreadsheet. Over time, the spreadsheet became too large and Drew started to break it into smaller, more focused spreadsheets. Drew aligned the spreadsheets with the tasks in the order process then stored just the data required for that task in a table. If information is needed from an earlier step in the process, Drew finds it and copy's it to the other spreadsheet.
 
-Here is how Drew broke the master spreadsheet into smaller pieces and which table we need to create.
+Here is how Drew broke the master spreadsheet into smaller pieces.
 
 | Task | Action | Spreadsheet | Table | 
 |:-----|:-------|:------------|:------|
@@ -29,6 +29,9 @@ Reviewing the spreadsheet, you write down the following notes:
 | Order Date | The date that the order was placed | date |
 | Customer Name | The customer's name| text |
 | Order Number | The order number | text |
+
+SCREENSHOT
+{: .label .label-red}
 
 ~~~
     1. Select + New Table.  
@@ -61,9 +64,9 @@ Next change the key field of this table. You did this for the products table, bu
     4. Select Exit Settings.
 ~~~
 
-## Import Orders from the File
+## Import the orders spreadsheet
 
-Fineally, import the orders from the OrderList.xlsx file you saved earlier. Just like before, the import dialogue box opens and gives you the opportunity to verify that the data will stored correctly. Review the information and import your data.
+Finally, import the orders from the OrderList.xlsx file you saved earlier. Just like before, the import dialogue box opens and gives you the opportunity to verify that the data will stored correctly. Review the information and import your data.
 
 SCREENSHOT
 {: .label .label-red}

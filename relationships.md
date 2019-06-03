@@ -6,28 +6,30 @@ nav_order: 5
 
 # Understanding related data
 
-Drew kept track of items for each order on the Order Details.xlsx spreadsheet. It has six columns: Order #, Line #, Product #, Product Name, Unit Price, and Quantity. Here’s a look at the first four records in the spreadsheet. 
+Drew kept track of items for each order in the `OrderDetails.xlsx` spreadsheet. Let's open it up and take a look.
 
 ![](assets/images/itemsTable.png)
 
-Order 444111 has three line items: Quick Charger, Quick Tablet, and Quick Phone, and the order is for a quantity of three each. 
+| Column | Meaning | Type |
+|:-|:-|:-|
+| Order # | The order number from the Orders spreadsheet | text |
+| Line # |  The line item in the order | number |
+| Product # | The product number from the Products spreadsheet | text |
+| Product Name | The product name from the Products spreadsheet | text |
+| Unity Price | The Unit Price from the Products spreadsheet | currency |
+| Quantity | The quantity of items for this order | number |
 
-You need to get the order detail into your app so you can keep track of every line item. You may wonder if you could simply add the line items to the existing Orders table. Do you really need a separate table for the line items? Whenever you need to track something, decide if you can add fields to an existing table or if you must create a whole new table. To decide, ask yourself two questions:
+NORMALIZE
+{: .label .label-red }
 
-* Do I track many of these?
-* Do I track many things about these?
-
-If the answer is yes to both, then create a table. 
-
-For line items, the answer to both is yes. You are tracking many line items, and many things about line items, such as quantity, product number, product name, and unit price. So you need to create a table for line items. 
-
-You will build the table a little differently this time. Because data related to the line items is already in the app, you can take advantage of Quick Base functionality to make entering line items in the user interface a snap! You will be able to add one or more line items to an order by selecting the product number from a dropdown menu, and have the product name and unit price auto-fill. 
-
-Earlier in this exercise, you added data related to line items to tables. Specifically, you added product numbers, product names, and unit prices to the Products table, and you added the order numbers and order dates to the Orders table. Rather than entering all this data into the Line Items table, you can pull it from existing tables. In technical terms, you first create a table-to-table relationship between the tables. Then you pull many values from the different tables together using lookup fields – something you’ll learn more about shortly. 
+_You will build the table a little differently this time. Because data related to the line items is already in the app, you can take advantage of Quick Base functionality to make entering line items in the user interface a snap! You will be able to add one or more line items to an order by selecting the product number from a dropdown menu, and have the product name and unit price auto-fill._
 
 ## Create the Line Items Table
 
 Begin by creating a table to contain the line items.  
+
+SCREENSHOT
+{: .label .label-red}
 
 ~~~
     1. Select + New Table.  
@@ -39,13 +41,16 @@ Begin by creating a table to contain the line items.
     7. Select Create.
 ~~~
 
-Instead of adding fields, select Cancel. The fields automatically created by Quick Base for every table are displayed. Shortly, you’ll import the Order Details.xlsx file containing the line item detail, and this will automatically create some fields for you!
+This time, instead of adding fields, click Cancel. The fields automatically created by Quick Base for every table are displayed. Shortly, you’ll import the `OrderDetails.xlsx` file containing the line item detail, and this will automatically create some fields for you!
 
 But first, you need to build table-to-table relationships between the Line Items table, the Products table, and the Orders table. Once you master how to build table-to-table relationships, you will fully realize the power of Quick Base. 
 
 ## Relate the line items and products tables
 
 When adding line items to an order, you want to be able to simply pick a product number from a dropdown list and have the associated product name and unit price auto-fill for you. To make this work, connect the Line Items table to the Products table using a table-to-table relationship.
+
+SCREENSHOT
+{: .label .label-red}
 
 ~~~
     1. In the left panel of the Line Items Settings page, select Table-to-table relationships. 
@@ -58,11 +63,14 @@ When adding line items to an order, you want to be able to simply pick a product
     8. Select Create Relationship.
 ~~~
 
-Congratulations! You just created the first table-to-table relationship in this app. 
+**Congratulations!** You just created the first table-to-table relationship in this app. 
 
 ## Relate the line items and orders tables
 
 Create a table-to-table relationship between the Line Items table and the Orders table. Then you’ll import the Order Details.xlsx file, and line items will automatically connect to the orders in the Orders table.
+
+SCREENSHOT
+{: .label .label-red}
 
 ~~~
     1. In the top right section, select + New Relationship.  
@@ -73,6 +81,9 @@ Create a table-to-table relationship between the Line Items table and the Orders
     6. Select Create Relationship. 
 ~~~
 
+Summarize the screenshot below
+{: .label .label-red}
+
 ![](assets/images/relationships.png)
 
 You now have two relationships. This will make creating line items within orders much simpler than manually maintaining a spreadsheet. We can tell you that, but seeing is believing. After you import the existing line items, you’ll create an order from scratch in the user interface. 
@@ -80,6 +91,9 @@ You now have two relationships. This will make creating line items within orders
 ## Rename Fields
 
 Now that you’ve connected these tables and added some lookup fields, this is a good time to rename some fields on the Line Items table. Quick Base automatically named some fields Related Products, Related Order, Product – Unit Price, and Order # - Customer Name, but those names might not make sense to users of this app. Rename those fields:
+
+SCREENSHOT
+{: .label .label-red}
 
 ~~~
     1. In the left panel of the Line Items Settings page, select Fields.
@@ -102,6 +116,9 @@ Now that you’ve connected these tables and added some lookup fields, this is a
 ## Import the line items data
 
 You’ve created the line items table and connected it to both the Products table and the Orders table. Now its time to populate this table with the data from Drew’s spreadsheet. Then you can say goodbye to those spreadsheets!
+
+SCREENSHOT
+{: .label .label-red}
 
 ~~~
     1. From the Line Items table homepage, select More>Select Import/Export.
@@ -130,6 +147,12 @@ The next page displays the preview of your data. Set values as described below:
     9. A message is displayed warning the import will create 2 new fields. Select OK.
 ~~~
 
+SCREENSHOT
+{: .label .label-red}
+
 The resulting page indicates the number of records and fields created. Congrats! Your app now contains all the data from Drew’s spreadsheets. 
+
+SUMMARY
+{: .label .label-red}
 
 [Next](orderFormDesign.html){: .btn .btn-purple }

@@ -4,9 +4,13 @@ title: Order Form Design
 nav_order: 6
 ---
 
-## View an Order
+INTRO
+{: .label .label-red}
 
 Check out the power of table relationships by viewing an order:
+
+SCREENSHOT
+{: .label .label-red}
 
 ~~~
     1. Select the Orders table.  
@@ -14,7 +18,7 @@ Check out the power of table relationships by viewing an order:
     3. All three line items for this order are displayed.
 ~~~
 
-Technically speaking, the order’s information is displayed on a form. The top of the form shows the fields for order number, customer name, and order date. The bottom of the form is a report that is pulling data from the Line Items table. Behind the scenes, Quick Base created this report and named it Embedded for Orders because it is embedded on the Orders form. The report is good, but notice that line items and quantities are not displayed. So you need to make a minor adjustment to this report. 
+The order’s information is displayed on a form. The top of the form shows the fields for order number, customer name, and order date. The bottom of the form is a report that is pulling data from the Line Items table. Behind the scenes, Quick Base created this report and named it Embedded for Orders because it is embedded on the Orders form. The report is good, but notice that line items and quantities are not displayed. So you need to make a minor adjustment to this report. 
 
 # Order Form Design
 
@@ -97,22 +101,5 @@ Test out your modified form by adding a new order.
 ~~~
 
 It’s so easy to add new orders, you plan to enable your team members to use this app to enter new orders.
-
-## Update a Record
-
-Now that your app is up and running, use it to correct the product name in the product list. First look at the product list to confirm it is incorrect, as your team members reported:
-
-~~~
-    1. Select the Products table.
-    2. In the Search, enter CA.
-    3. The results show 2 cables. The product name for CA8018 is incorrect. 
-    4. Select the pencil icon to the left of the Product Name. 
-    5. The page refreshes. Look at how many orders contain this cable and the incorrect product name.
-    6. At the top of the page, change the product name to Cat 8 Cable 8ft.
-    7. Select Save & close.
-    8. Select the pencil icon for CA8018 again to view the orders for this product. Notice that all the orders now reflect the updated product name. 
-~~~
-
-In just a few clicks, you updated this product name in the products table and on all orders. 
 
 [Next](report.html){: .btn .btn-purple }
