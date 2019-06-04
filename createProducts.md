@@ -6,7 +6,7 @@ nav_order: 3
 
 # Create your first Quick Base table
 
-Quick Base stores data in tables. Tables are like spreadsheets, but better.  Understanding how tables work is the first step in your journey to create an app.  
+Quick Base stores data in tables. Tables are like spreadsheets, but better.  Understanding how tables work is the first step in your journey to creating an app.  
 
 ## Review the product list spreadsheet
 
@@ -48,6 +48,9 @@ Creating the table is the first half of the process, now we have to describe the
     3. Click the `Add` button
 ~~~
 
+SCREENSHOT and EXIT SETTINGS
+{: .label .label-red }
+
 <div markdown="span" style="padding: 1.25rem; margin-top: 1.25rem; margin-bottom: 1.25rem; border: 1px solid #eee; border-left-width: .25rem; border-radius: .25rem; border-left-color: #7253ed;" >
 **Congratulations!** You created the first table in this app.
 </div>
@@ -69,6 +72,9 @@ Success! Now we are ready to get the rest of the products into the table and cor
 ## Import the products spreadsheet
 
 You prepared a table to hold the product information and added a product to the table by hand, now, let's import the rest of the products from the ProductList.xlsx file that Drew gave us:
+
+THIS WORKFLOW IS WRONG
+{: .label .label-red}
 
 ~~~
     1. Click the Products table icon to view the homepage for this table  
@@ -131,6 +137,9 @@ Screenshot
 ## Update a Record
 
 Now that your app is up and running, use it to correct the product name in the product list. First look at the product list to confirm it is incorrect, as your team members reported:
+
+Change to use grid edit ~ more familiar to a spreadsheet user
+{: .label .label-red }
 
 ~~~
     1. Select the Products table.

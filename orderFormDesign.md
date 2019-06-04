@@ -18,6 +18,9 @@ SCREENSHOT
     3. All three line items for this order are displayed.
 ~~~
 
+Be clear about this. If you create a filter it does not display the form. 
+{: .label .label-yellow }
+
 The order’s information is displayed on a form. The top of the form shows the fields for order number, customer name, and order date. The bottom of the form is a report that is pulling data from the Line Items table. Behind the scenes, Quick Base created this report and named it Embedded for Orders because it is embedded on the Orders form. The report is good, but notice that line items and quantities are not displayed. So you need to make a minor adjustment to this report. 
 
 # Order Form Design
@@ -88,6 +91,9 @@ Within Products Settings, select Advanced Settings in the lower-left section of 
 ## Add a New Order
 
 Test out your modified form by adding a new order.
+
+I could not get this to work -- is there a new workflow?
+{: .label .label-red }
 
 ~~~
     1. Select the Orders table.

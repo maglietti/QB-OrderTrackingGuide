@@ -19,14 +19,11 @@ Drew kept track of items for each order in the `OrderDetails.xlsx` spreadsheet. 
 | Unity Price | The Unit Price from the Products spreadsheet | currency |
 | Quantity | The quantity of items for this order | number |
 
-NORMALIZE
-{: .label .label-red }
-
-_You will build the table a little differently this time. Because data related to the line items is already in the app, you can take advantage of Quick Base functionality to make entering line items in the user interface a snap! You will be able to add one or more line items to an order by selecting the product number from a dropdown menu, and have the product name and unit price auto-fill._
+This time, as you review the spreadsheet, you recognize field names that are shared with the other spreadsheets. This is the information that Drew copied and pasted from spreadsheet to spreadsheet. By defining table relationships in Quick Base, the system can automatically get the related information from one table and display it in another by configuring a **table to table** relationship. Let's do that now. 
 
 ## Create the Line Items Table
 
-Begin by creating a table to contain the line items.  
+We are going to create the `LineItems` table a little different then we did with the `Products` and `Orders` tables. Some fields in the `LineItems` table will have relationships with information stored in either the `Products` or `Orders` table. We will create the table and define the relationships firs. 
 
 SCREENSHOT
 {: .label .label-red}
@@ -41,7 +38,7 @@ SCREENSHOT
     7. Select Create.
 ~~~
 
-This time, instead of adding fields, click Cancel. The fields automatically created by Quick Base for every table are displayed. Shortly, you’ll import the `OrderDetails.xlsx` file containing the line item detail, and this will automatically create some fields for you!
+When the **Add New Fields** dialogue opens, click `Cancel` so that we can define the relationships first. The fields automatically created by Quick Base for every table are displayed. Shortly, you’ll import the `OrderDetails.xlsx` file containing the line item detail, and this will automatically create some fields for you!
 
 But first, you need to build table-to-table relationships between the Line Items table, the Products table, and the Orders table. Once you master how to build table-to-table relationships, you will fully realize the power of Quick Base. 
 
@@ -129,8 +126,11 @@ SCREENSHOT
 
 The next page displays the preview of your data. Set values as described below:
 
-![](assets/images/itemsTable.png)
+SCREENSHOT
+{: .label .label-red}
 
+THESE INSTRUCTIONS DON'T MAKE ANY SENSE
+{: .label .label-yellow}
 ~~~
     1. Confirm First Row is List of Field Names is checked.
     2. Confirm the Order # column is set to be imported To Existing Field. 
@@ -146,9 +146,6 @@ The next page displays the preview of your data. Set values as described below:
     8. Select Import. 
     9. A message is displayed warning the import will create 2 new fields. Select OK.
 ~~~
-
-SCREENSHOT
-{: .label .label-red}
 
 The resulting page indicates the number of records and fields created. Congrats! Your app now contains all the data from Drew’s spreadsheets. 
 
