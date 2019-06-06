@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Create a Report
-nav_order: 9
+nav_order: 6
 ---
 
 # Create a report
 
-Remember those reports the Vice President asked for? She asked to see what customers are spending the most and what products are selling the best. Create two charts, then place them together on the app home page - the dashboard - that the Vice President can access at any time to view the current reports. 
+Remember the report that management asked for? She asked to see what customers are spending the most and what products are selling the best. Create two charts, then place them together on the app home page - the dashboard - that management can access at any time to view the current reports. 
 
 Reports are visual displays of data. They can be pie charts, bar charts, line graphs, summary reports, and even calendars and maps. You’ve already seen a few reports that Quick Base automatically created, including an embedded report on a form displaying line items. 
 

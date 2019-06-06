@@ -6,7 +6,7 @@ nav_order: 2
 
 # Your first Quick Base app
 
-Taking a recommendation from a friend, you decide to try building an app in Quick Base for the order process. Your friend sent you a link to the Quick Base web site and you found your way to the builder program. After signing up and verifying your email address, you log into your Quick Base builder domain by clicking the link provided in your welcome email. Immediately you're greeted with an opportunity to create your first app. 
+Taking a recommendation from a friend, you decide to try building an app using Quick Base. Your friend sent you a link to the Quick Base web site and you found your way to the builder program. After signing up and verifying your email address, you log into your Quick Base builder domain by clicking the link provided in your welcome email. Immediately you're greeted with an opportunity to create your first app. 
 
 <div markdown="span" style="padding: 1.25rem; margin-top: 1.25rem; margin-bottom: 1.25rem; border: 1px solid #eee; border-left-width: .25rem; border-radius: .25rem; border-left-color: #7253ed;" >
 <b>Note:</b> Please log into your Quick Base account and open the application in another window so that you can easily go between this guide and Quick Base. If you have not already done so, please close all dialogues and navigatet to the **My Apps** tab. 
