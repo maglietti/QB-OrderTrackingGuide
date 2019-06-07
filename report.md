@@ -1,67 +1,148 @@
 ---
 layout: default
-title: Create a Report
+title: Create Reports
 nav_order: 6
 ---
 
-# Create a report
+# Quick Base Reports
 
-Remember the report that management asked for? She asked to see what customers are spending the most and what products are selling the best. Create two charts, then place them together on the app home page - the dashboard - that management can access at any time to view the current reports. 
+Remember the reports that management asked for in the morning meeting? They want to know which customers spend the most and which products produce the most revenue. We need to create a report to answer each question. Then we can place them together on the app home page - the dashboard - so management can access at any time.
 
-Reports are visual displays of data. They can be pie charts, bar charts, line graphs, summary reports, and even calendars and maps. You’ve already seen a few reports that Quick Base automatically created, including an embedded report on a form displaying line items. 
+Reports are visual displays of data. Quick Base can create pie charts, bar charts, line graphs, summary reports, and even calendars and maps. You’ve already seen the most common report that Quick Base automatically creates, the table report. Each time you click a table in the navigation, Quick Base opens the table home page and displays the default table report displaying all of the table records.
 
-## Create a Chart for Customer by Spend
+## Create a Table Report to summarize Orders
 
-You can create reports on all your tables. A report can include data from just its own table or may include data from several tables. For your first report, build a chart based on the Line Items table:
- 
-![](/assets/images/lineItemsReport.png)
+The first report that we are going to create will collect information from all of our tables and display a summary of all orders. Management didn't ask for the report today, but you know that it will help them understand the other reports and answer questions that they have asked in the past. You think about what everyone talks about in the morning meeting and write down the fields that the team usually has questions about.
 
-    1. View the Line Items table.
-    2. Select Reports & Charts.
+You write down the following thoughts:
 
-Here you can see the two reports Quick Base automatically created for you when you created the table. These are both List reports which list the data in a spreadsheet format. You are going to build a chart report:
+| Field | Source Table | Type |
+|:-|:-|:-|
+| Order # | Orders | text |
+| Order Date | Orders | date |
+| Customer Name | Customers | text |
+| Items Ordered | Line Items | **link** |
+| Order Total | **Formula** | currency | 
 
-    3. Select + New.
-    4. Select the radio button for Chart.
-    5. Select Create.
-    6. Give the chart an appropriate name, such as Customers by Spend. Keep in mind that you can rename reports at any time. 
-    7. Enter a description of your choice. The description is important because without it, regular users of this app may not  kn w what the report is for, even if the name is clear. You can update the report description at any time. 
-    8. Select the checkbox for Show description on chart page so app users can view the description.
+As you thought about the list of items in the order, you decided that you really want to **link** to that data rather than including it in the summary table. You also decided that you want to include the total for the entire order in the summary, you know that you have to write a formula to do that so you write down **formula** as the source. 
 
-Skip over the Reports & Charts Panel section. In the Chart Details section, provide content to create the chart:
+### Add a summary column
 
-    1. Select the button Select a type of chart and select Pie.
-    2. Set Series to Customer Name.
-    3. Set Data Values to Unit Price.
-    4. Set Summarize by to (summed).
-    5. Skip the Sorting section.
-    6. Select the checkbox for Data labels always visible. 
-    7. Set Display value as to Value. Feel free to change this later to see what else is possible.
+You click on the `Orders` table in navigation and the **Orders Home** page opens. You compare the fields in the default table report to the fields you wrote down for your summary report. They are close but not the same. Specifically, you notice that there is no order summary for each order record. Let's add one. 
 
-There are plenty of other settings to play with, but those are the load-bearing ones for this exercise. Go ahead and explore, but when you’re done, select Save in the upper-right and view the results. 
+There are several ways to create a summary field in Quick Base. You could write a formula like the one we used to calculate cost in the Line Items table, but there is an easier way. Because we created a table-to-table relationship between the Orders and Line Items tables, includes a [summary field](https://help.quickbase.com/user-assistance/create_summary_field.html) feature by default. Let's use that. 
 
-Move your cursor over the pie chart to see additional information. If you want to make further changes, select Customize this Report in the upper-right. Later, you can always go to Settings > Reports & Charts to find this report and make further changes.
+~~~
+    1. Click on the Orders table in navigation 
+    2. Click the Gear icon to open table settings
+    3. Click on Table-to-table relationships in the Table Structure group
+    4. Click on the Orders -> Line Items relationship
+    5. Click on `Add Summary Field`
+    6. Select `A summary of a specific Field`
+    7. Select `Total` for the field
+    8. Select `Line Total` from the field list
+    9. Click the blue `Create` button
+    10. Name the field "Total"
+~~~
 
-Here’s the great thing about reports in Quick Base: once you’ve created one type, you can easily create others. Creating various types of reports will not only help you pick the right way to display your data, but will provide some much-needed variety for users poring over data all day. 
+Relationship between the Orders table and the Line Items table looks like this:
 
-Create a Summary Report of Products by Spend
+SCREENSHOT
+{: .label .label-red }
 
-Let’s get back to the VP’s request. This time, use a summary report to show the top selling products. 
+Click the blue `Done` button to add the field to the table configuration. Then click on `Fields` in the Table Structure group and verify that the Total field was added to the table.
 
-    1. In the Line Items table, select Reports & Charts.
-    2. Select + New.
-    3. Select the radio button for Summary.
-    4. Select Create.
-    5. Name the report Products by Spend.
-    6. Provide an apt description, such as This lists all products by value sold. 
-    7. Select the checkbox for Show description on report page.
-    8. In the Summarize Data section, set Summarize to Unit Price.
-    9. Do not change the default values for Summarize By and Display As.
-    10. In the Grouping and crosstabs section, set Group by to Product Name. 
-    11. Do not change the default value for Combine.
-    12. In the Sorting section, set Sort to Custom order.
-    13. Set Sort by to Unit Price (tot) and from high to low.
-    14. That’s it! Select Save to view the results. 
+SCREENSHOT
+{: .label .label-red }
+
+Exit the Order table settings. 
+
+### Create a custom table report
+
+Just like when we create a new table, we need to create a new Quick Base report and then configure it to display what we want. Start by clicking on the `Orders` table in navigation to open the **Orders Home** page and expand the Reports & Charts list by clicking on its link.
+
+SCREENSHOT
+{: .label .label-red }
+
+Create a new report by clicking on the `New` button next to the reports & charts search box.
+
+SCREENSHOT
+{: .label .label-red }
+
+~~~
+    1. Select Table in the New report pop-up
+    2. Name: Orders Summary
+    3. Description: Summary of customer orders
+    4. Select Custom columns
+    5. Select the Report Columns
+    6. Select `Sort or group on other fields` in the Sourting & Grouping group
+    7. Select `sort from hight to low by`
+    8. Select `Order Date` from the list of fields
+    9. Click the blue `Save` button
+    10. Name: Orders Summary in the save report pop-up
+    11. Description: Summary of customer orders
+~~~
+
+Verify that the Orders Summary report is correct
+
+SCREENSHOT
+{: .label .label-red }
+
+## Create a Bar Chart to view Customer by Spend
+
+Say something here...
+
+SCREENSHOT
+{: .label .label-red }
+
+~~~
+    1. Click New
+    2. Select `Chart` on the New report pop-up
+    3. Name: Customers by Spend
+    4. Description: Quarterly spend by each customer
+    5. Select `bar` as the chart Type in the Chart Details group
+    6. Select `Customer Name` and `Equal Values` for the x axis
+    7. Select `Line Total` and `(summed)` for the y axis
+    8. Select `Order Date` and Group by: `Quarter` for the Series
+    9. Click the blue `Save` button
+~~~    
+
+Verify that the bar chart correctly displays how much each customer has spent this quarter.
+
+SCREENSHOT
+{: .label .label-red }
+
+## Create a Summary Report to display Products by Sales
+
+Say something here...
+
+SCREENSHOT
+{: .label .label-red }
+
+~~~
+    1. Click New
+    2. Select Summary from the New Report pop-up
+    3. Name: Products by Revenue
+    4. Description: Products sorted by revenue
+    5. Summarize: `Line Total`
+    6. Summarize By: `Totals`
+    7. Display As: `Normal Value`
+    8. Group By: `Product Name`
+    9. Combine: `Equal Values`
+    10. Sorty by: `Line Total (tot)`
+    11. Select `from hight to low`
+    12. Click the blue `Save`button
+~~~
+
+Verify that the summary chart correctly displays how much revenue each product has brought in.
+
+SCREENSHOT
+{: .label .label-red }
+
+
+**Summary**
+
+Write something here...
 
 
 [Next](dashboard.html){: .btn .btn-purple }

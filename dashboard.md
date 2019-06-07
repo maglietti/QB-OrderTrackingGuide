@@ -1,34 +1,20 @@
 ---
 layout: default
 title: Create a Dashboard
-nav_order: 10
+nav_order: 7
 ---
 
-# Create a dashboard
+# App Dashboard
 
 Dashboards give people one convenient place to see or access key information. It is what people see when they first sign into an app. You can create different dashboards for different roles. 
 
-Put both reports you created for the Vice President on the dashboard so she can easily access this information from her own computer at any time. 
+## Add the orders summary report
 
-## Add Reports to the Dashboard
+## Add the customer by spend report
 
-Follow the steps below to turn the app Home page into the main dashboard:
+## Add the product by revenue report
 
-![](assets/images/createDashboard.png)
-
-    1. Select the app Home page.
-    2. Select Customize This Page. A gallery of widgets is displayed. 
-    3. Drag and drop the Report or Chart widget from the top of the page to a spot on the page below. 
-    4. When you release the mouse, look to the upper-right to choose the report to display. Reports and charts are grouped by table. Locate the Line Items table in the list and select Customers by Spend. 
-    5. Drag and drop the Report or Chart widget from above to the spot next to the Customers by Spend pie chart. Without detailed instructions, set this widget to the Products by Spend report. 
- 
-## View the new dashboard. 
- 
-![](assets/images/defaultDashboard.png)
-
-    1. If one report is a lot smaller than the other, hover your mouse between the reports to make the resizer appear. Drag it left or right to resize the reports to your liking. 
-
-## Add Buttons to the Dashboard
+## Add a create new order button
 
 ![](assets/images/dashboardBtn.png)
 

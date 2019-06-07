@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Conclusion
-nav_order: 11
+nav_order: 8
 ---
 
 # Conclusion
 
-You faced a lot of challenges when you took on this new role of managing orders. You inherited a process that was inefficient, prone to errors, and heavily dependent on one person manually updating multiple spreadsheets and sharing reports with management. You took time to understand the existing process, identified specific problems to address, and defined clear objectives for improvement. And without any help from your IT department, you were able to build a custom app using Quick Base to achieve those objectives. Look at what you accomplished:
+_You faced a lot of challenges when you took on this new role of managing orders. You inherited a process that was inefficient, prone to errors, and heavily dependent on one person manually updating multiple spreadsheets and sharing reports with management. You took time to understand the existing process, identified specific problems to address, and defined clear objectives for improvement. And without any help from your IT department, you were able to build a custom app using Quick Base to achieve those objectives. Look at what you accomplished._
 
 ## Goals
 
@@ -21,7 +21,7 @@ Exercitation labore dolore ipsum sunt ut.
 |**Share access to reports.**|Enabled management to see the status of the buisness without asking.|Dashboard|
 
 
-By enabling other users to enter orders and view reports, you empowered them to be self-sufficient. Everyone wins!
+You made it easy for others in your team to enter orders and view reports, you empowered them to be self-sufficient. Everyone wins!
 
 * Your team has the information they need at their fingertips. 
 * Your company is run more efficiently, saving time and money. 
