@@ -24,23 +24,29 @@ Reviewing the spreadsheet, you write down the following notes:
 | Product Name | The name of the product | text |
 | Unit Price | The price | currency |
 
-In Quick Base, you first describe what a table is going to store before filling it with data. Let's take what we learned from the spreadsheet and configure a table to hold the product information. Start by clicking the **New Table** button from the app navigation bar and selecting **From scratch - Design your own table.**
+In Quick Base, you first describe what a table is going to store before filling it with data. Let's take what we learned from the spreadsheet and configure a table to hold the product information. Start by clicking the **New Table** button from the table navigation bar. 
 
-![](assets/images/newTable.png)
+![](assets/images/image-3.png)
 
-Configure the table by giving it a name and information that describe how it will be used.
+Then select **From scratch - Design your own table.**
+
+![](assets/images/image-4.png)
+
+Configure the table by giving it a name, record name, icon, and a description to describe how it's used.
+
+![](assets/images/image-5.png)
 
 ~~~
-    3. Name the table: Products
-    4. A single record is called a: Product
-    5. Select an icon to represent your table - we chose the hand cart
-    6. Provide a description: List of products we sell
-    7. Click the `Create` button
+    1. Name the table: Products
+    2. A single record is called a: Product
+    3. Select an icon to represent your table - we chose the hand cart
+    4. Provide a description: List of products we sell
+    5. Click the `Create` button
 ~~~
 
-Creating the table is the first half of the configuration process, next we describe the table fields and what they store. Add fields to the table based on what we observed in Drew's spreadsheet.  
+Great! Creating the table is the first half of the configuration process, next, add fields to the table and identify what kind of data they store. We add the fields based on what we observed in Drew's spreadsheet.  
 
-![](assets/images/newFields.png)
+![](assets/images/image-6.png)
 
 ~~~
     1. Fill in a `Field Label` for each of the column names from the spreadsheet
@@ -48,19 +54,15 @@ Creating the table is the first half of the configuration process, next we descr
     3. Click the `Add` button
 ~~~
 
-<div markdown="span" style="padding: 1.25rem; margin-top: 1.25rem; margin-bottom: 1.25rem; border: 1px solid #eee; border-left-width: .25rem; border-radius: .25rem; border-left-color: #7253ed;" >
-**Congratulations!** You created the first Quick Base table!
-</div>
+> **Congratulations!** You created your first Quick Base table!
 
-SCREENSHOT
-{: .label .label-red }
+Now you know the steps to create and configuration any table that you want in Quick Base. You can return to the **Fields** settings page at any time to make changes.
+
+![](assets/images/image-7.png)
 
 ## Import the products spreadsheet
 
-Let's import the products from the ProductList.xlsx file that Drew gave us:
-
-THIS WORKFLOW IS WRONG
-{: .label .label-red}
+Now that we have a place to store our data, let's import the products from the ProductList.xlsx file that Drew gave us:
 
 ~~~ 
     1. In the top right section of the page, click `Import/Export`
@@ -70,10 +72,9 @@ THIS WORKFLOW IS WRONG
     5. Click the `Import From File...` button
 ~~~
 
-Screenshot
-{: .label .label-red}
-
 The **Import** dialogue allows you to configure how the file is imported
+
+![](assets/images/image-8.png)
 
 ![](assets/images/importProdcuts.png)
 
@@ -82,14 +83,13 @@ The **Import** dialogue allows you to configure how the file is imported
     3. Look at the data and field names and make sure they are like the spreadsheet
     3. Click the `Import` button
 
-Screenshot
-{: .label .label-red}
+![](assets/images/image-9.png)
 
-Finally, a dialogue shows the results: 14 rows were read, 14 records were added, no records were updated, and there were no data rows with errors. 
+Once all of the data is loaded, the import results page opens to show the results: 14 rows were read, 14 records were added, no records were updated, and there were no data rows with errors. 
 
-<div markdown="span" style="padding: 1.25rem; margin-top: 1.25rem; margin-bottom: 1.25rem; border: 1px solid #eee; border-left-width: .25rem; border-radius: .25rem; border-left-color: #7253ed;" >
-**Success!** You have imported your first spreadsheet to Quick Base
-</div>
+![](assets/images/image-10.png)
+
+> **Success!** You have imported your first spreadsheet to Quick Base
 
 As an aside, what do you think would happen if you accidentally uploaded that same spreadsheet with the same list of products into the app a second time ... would every product appear in the table twice, like shown here?
 
@@ -102,22 +102,28 @@ By default, Quick Base automatically creates a `Record ID#` field for every tabl
 Here's how:
 
 ~~~
-    1. Click the icon for the Products table in the App nav bar
+    1. Click the icon for the Products table in the table nav bar
     2. Click the gear icon in the blue box next to the `Products > Products Home` breadcrumb
     3. Click `Fields (8)` in the **Table Structure** group
 ~~~
 
 Let's set the `Product #` field to be the **Key** for the Products table.
 
-![](assets/images/keyField.png)
+![](assets/images/image-11.png)
 
-~~~
-    1. Check the checkbox for Product #
-    2. Click `Set Key`
-    3. Click the `Set Key` button in the pop-up  
-    4. Verify that the gold key moved to the `Product #` field
-    4. Click `Exit Settings` in the top left section of the screen.
-~~~
+Select the checkbox for `Product #`
+
+![](assets/images/image-12.png)
+
+Click `Set Key`
+
+![](assets/images/image-13.png)
+
+Click the `Set Key` button in the pop-up  
+
+![](assets/images/image-14.png)
+
+Verify that the gold key moved to the `Product #` field then click `Exit Settings`.
 
 Your future self will thank you for setting this up now. 
 
@@ -125,26 +131,23 @@ Your future self will thank you for setting this up now.
 
 Ok, almost done with the Products table. Our last step is to take a look what was imported and update that pesky product name! Start by clicking the the Products table icon to view the homepage for this table. Note that whenever you click on a table button in the app nav bar, it will display the default _table report_ in the table's **Home** page. 
 
-Screenshot
-{: .label .label-red}
+![](assets/images/image-15.png)
 
 ## Update a Record
 
-We can easily see the wrong product name in the table, we can correct the product name in the product list from the home page. 
+We are looking for Product # `CA6018` which has the wrong product name `Cat 9 Cable 10ft`, this is really a Cat 6 cable. With the Table Report open, we quickly spot the wrong product name, we can correct the product name in the product list from the home page. 
 
-We are looking for Product # `CA6018` which has the wrong product name `Cat 9 Cable 10ft`, this is really a Cat 6 cable. 
+![](assets/images/image-16.png)
 
 ~~~
-    2. In the Search bar, enter CA6018.
-    3. The table shows only the one product that matches 
-    4. Click the `Grid Edit` button in the app nav bar 
-    5. Double click on the wrong product name
-    6. Correct the product name
-    7. Click the green Save button
-    8. Verify that the product name was updated 
+    1. Click the `Grid Edit` button in the app nav bar 
+    2. Double click on the wrong product name
+    3. Correct the product name
+    4. Click the green Save button
+    5. Verify that the product name was updated 
 ~~~
 
-In just a few clicks, you updated this product name in the products table now it will be correct in all of the orders. 
+In just a few clicks, you updated this product name in the products table now it will be correct in all of the orders.
 
 Summary
 {: .label .label-red}
