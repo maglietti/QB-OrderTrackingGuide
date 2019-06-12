@@ -74,8 +74,6 @@ The **Import** dialogue allows you to configure how the file is imported
 
 ![](assets/images/image-8.png)
 
-![](assets/images/importProdcuts.png)
-
     1. The first row of Drew's spreadsheet contains the Field Names, make sure this is checked.
     2. We have already defined the fields and we want the data imported to them
     3. Look at the data and field names and make sure they are like the spreadsheet
