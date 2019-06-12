@@ -10,9 +10,7 @@ Quick Base stores data in tables. Tables are like spreadsheets, but better.  Und
 
 ## Review the product list spreadsheet
 
-Drew provided three spreadsheet files, and since our first goal is to correct a product name let's start with the Product List spreadsheet. Opening the `ProductList.xlsx` file, we see that it has data in three columns. The name for each column is stored in the first row.
-
-Open the spreadsheet and take a look at what what is stored inside.  
+Drew provided three spreadsheet files, and since our first goal is to correct a product name, let's start with the Product List spreadsheet. Opening the `ProductList.xlsx` file, we see that it has data in three columns, and the name of each column is stored in the first row.  
 
 ![](assets/images/prodTable.png)
 
@@ -24,7 +22,7 @@ Reviewing the spreadsheet, you write down the following notes:
 | Product Name | The name of the product | text |
 | Unit Price | The price | currency |
 
-In Quick Base, you first describe what a table is going to store before filling it with data. Let's take what we learned from the spreadsheet and configure a table to hold the product information. Start by clicking the **New Table** button from the table navigation bar. 
+To add a table to Quick Base, first you describe what a table is going to store before filling it with data. Let's take what we learned from the spreadsheet and configure a table to hold the product information. Start by clicking the **New Table** button from the table navigation bar. 
 
 ![](assets/images/image-3.png)
 
@@ -54,7 +52,7 @@ Great! Creating the table is the first half of the configuration process, next, 
     3. Click the `Add` button
 ~~~
 
-> **Congratulations!** You created your first Quick Base table!
+> **Congratulations!** You just created your first Quick Base table!
 
 Now you know the steps to create and configuration any table that you want in Quick Base. You can return to the **Fields** settings page at any time to make changes.
 
@@ -148,8 +146,5 @@ We are looking for Product # `CA6018` which has the wrong product name `Cat 9 Ca
 ~~~
 
 In just a few clicks, you updated this product name in the products table now it will be correct in all of the orders.
-
-Summary
-{: .label .label-red}
 
 [Next](createOrders.html){: .btn .btn-purple }

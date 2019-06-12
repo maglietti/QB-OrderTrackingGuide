@@ -6,7 +6,7 @@ nav_order: 6
 
 # Quick Base Reports
 
-Remember the reports that management asked for in the morning meeting? They want to know which customers spend the most and which products produce the most revenue. We need to create a report to answer each question. Then we can place them together on the app home page - the dashboard - so management can access at any time.
+Remember the reports that management asked for in the morning meeting? They want to know which customers spend the most and which products produce the most revenue. We need to create a report to answer each question. Then we can place them together on the app home page - the dashboard - so management can access them at any time.
 
 Reports are visual displays of data. Quick Base can create pie charts, bar charts, line graphs, summary reports, and even calendars and maps. You’ve already seen the most common report that Quick Base automatically creates, the table report. Each time you click a table in the navigation, Quick Base opens the table home page and displays the default table report displaying all of the table records.
 
@@ -32,6 +32,12 @@ You click on the `Orders` table in navigation and the **Orders Home** page opens
 
 There are several ways to create a summary field in Quick Base. You could write a formula like the one we used to calculate cost in the Line Items table, but there is an easier way. Because we created a table-to-table relationship between the Orders and Line Items tables, includes a [summary field](https://help.quickbase.com/user-assistance/create_summary_field.html) feature by default. Let's use that. 
 
+
+![](assets/images/image-48.png)
+![](assets/images/image-49.png)
+![](assets/images/image-50.png)
+![](assets/images/image-51.png)
+
 ~~~
     1. Click on the Orders table in navigation 
     2. Click the Gear icon to open table settings
@@ -43,17 +49,16 @@ There are several ways to create a summary field in Quick Base. You could write 
     8. Select `Line Total` from the field list
     9. Click the blue `Create` button
     10. Name the field "Total"
+    11. Click the blue `OK` button
 ~~~
 
 Relationship between the Orders table and the Line Items table looks like this:
 
-SCREENSHOT
-{: .label .label-red }
+![](assets/images/image-52.png)
 
 Click the blue `Done` button to add the field to the table configuration. Then click on `Fields` in the Table Structure group and verify that the Total field was added to the table.
 
-SCREENSHOT
-{: .label .label-red }
+![](assets/images/image-53.png)
 
 Exit the Order table settings. 
 
@@ -61,13 +66,14 @@ Exit the Order table settings.
 
 Just like when we create a new table, we need to create a new Quick Base report and then configure it to display what we want. Start by clicking on the `Orders` table in navigation to open the **Orders Home** page and expand the Reports & Charts list by clicking on its link.
 
-SCREENSHOT
-{: .label .label-red }
+![](assets/images/image-54.png)
 
 Create a new report by clicking on the `New` button next to the reports & charts search box.
 
-SCREENSHOT
-{: .label .label-red }
+![](assets/images/image-55.png)
+![](assets/images/image-56.png)
+![](assets/images/image-57.png)
+![](assets/images/image-58.png)
 
 ~~~
     1. Select Table in the New report pop-up
@@ -85,15 +91,16 @@ SCREENSHOT
 
 Verify that the Orders Summary report is correct
 
-SCREENSHOT
-{: .label .label-red }
+![](assets/images/image-59.png)
 
 ## Create a Bar Chart to view Customer by Spend
 
 Say something here...
+{: .label .label-yellow}
 
-SCREENSHOT
-{: .label .label-red }
+![](assets/images/image-60.png)
+![](assets/images/image-61.png)
+![](assets/images/image-62.png)
 
 ~~~
     1. Click New
@@ -109,15 +116,15 @@ SCREENSHOT
 
 Verify that the bar chart correctly displays how much each customer has spent this quarter.
 
-SCREENSHOT
-{: .label .label-red }
+![](assets/images/image-63.png)
 
 ## Create a Summary Report to display Products by Sales
 
 Say something here...
+{: .label .label-yellow }
 
-SCREENSHOT
-{: .label .label-red }
+![](assets/images/image-64.png)
+![](assets/images/image-65.png)
 
 ~~~
     1. Click New
@@ -136,13 +143,6 @@ SCREENSHOT
 
 Verify that the summary chart correctly displays how much revenue each product has brought in.
 
-SCREENSHOT
-{: .label .label-red }
-
-
-**Summary**
-
-Write something here...
-
+![](assets/images/image-66.png)
 
 [Next](dashboard.html){: .btn .btn-purple }

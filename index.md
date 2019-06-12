@@ -8,7 +8,7 @@ nav_order: 1
 
 Hello and welcome to the Quick Base getting started guide. This guide walks you through the process of creating a basic order management application in Quick Base. As you progress, you will experience the process of app creation while learning key concepts and skills.
 
-![](assets/images/image-75.png){:class="center"}
+![](assets/images/image-75.png)
 
 ## Scenario
 

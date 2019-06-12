@@ -6,7 +6,7 @@ nav_order: 4
 
 # Storing data in a database
 
-Quick Base allows you to store all of the information stored in multiple spreadsheets in one app arranged in tables. This way, a piece of information from one table is easily used in another table. We call this related data. When Drew started, all of the order information was stored in one giant spreadsheet. Over time, the spreadsheet became too large and Drew started to break it into smaller, more focused spreadsheets. Drew aligned the spreadsheets with the tasks in the order process then stored just the data required for that task in a table. If information is needed from an earlier step in the process, Drew finds it and copy's it to the other spreadsheet.
+Quick Base allows you to store all of the information from multiple spreadsheets in one app arranged in tables. This way, a piece of information from one table is easily used in another table. We call this related data. When Drew started, all of the order information was stored in one giant spreadsheet. Over time, the spreadsheet became too large and Drew started to break it into smaller, more focused spreadsheets. Drew aligned the spreadsheets with the tasks in the order process then stored just the data required for that task in a table. If information is needed from an earlier step in the process, Drew finds it and copy's it to the other spreadsheet.
 
 Here is how Drew broke the master spreadsheet into smaller pieces.
 
@@ -30,8 +30,7 @@ Reviewing the spreadsheet, you write down the following notes:
 | Customer Name | The customer's name| text |
 | Order Number | The order number | text |
 
-SCREENSHOT
-{: .label .label-red}
+![](assets/images/image-17.png)
 
 ~~~
     1. Click `New Table` from the app nav bar  
@@ -43,9 +42,11 @@ SCREENSHOT
     7. Click Create
 ~~~
 
+![](assets/images/image-18.png)
+
 Ok, now add the fields of the table.
 
-![](assets/images/ordersFields.png)
+![](assets/images/image-19.png)
 
 ~~~
     1. Create fields to hold the Order #, Customer Name, Order Date 
@@ -55,7 +56,7 @@ Ok, now add the fields of the table.
 
 Don't forget about setting the **key** field for the Orders table. 
 
-![](assets/images/ordersKeyField.png)
+![](assets/images/image-20.png)
 
 ~~~
     1. Select the checkbox for Order #.
@@ -64,12 +65,11 @@ Don't forget about setting the **key** field for the Orders table.
     4. Verify that the gold key moved to the `Order #` field
 ~~~
 
-SCREENSHOT
-{: .label .label-red}
-
 ## Import the orders spreadsheet
 
 Finally, import the orders from the OrderList.xlsx file you downloaded earlier. Just like before, the import dialogue box opens and gives you the opportunity to verify that the data will stored correctly. Review the information and import your data.
+
+![](assets/images/image-21.png)
 
 ~~~
     1. Click the `Import/Export` button
@@ -77,12 +77,17 @@ Finally, import the orders from the OrderList.xlsx file you downloaded earlier. 
     3. Confirm Select Table is set to Orders and Select Merge Field is set to Order #
     4. Review how each field will be imported to ensure it is correct
     5. Click the Import button
-    5. Click OK
+    6. Click OK
 ~~~
+
+![](assets/images/image-22.png)
 
 A page shows the results: 67 data rows were read, 67 new records were created, 0 existing records were updated, and there were 0 data rows with errors. The import was successful, and your app now contains the data from the `OrderList.xlsx` file. 
 
-Summary
-{: .label .label-red }
+![](assets/images/image-23.png)
+
+Click on the `Orders` table in the table nav and review the data that was imported.
+
+![](assets/images/image-24.png)
 
 [Next](relationships.html){: .btn .btn-purple }
