@@ -6,10 +6,10 @@ nav_order: 8
 
 # Conclusion
 
-This page needs rewritten
-{: .label .label-yellow}
+We hope that you enjoyed your first experience with Quick Base. We are confident that once you get a hang of the basic operations, that you will come up with an unlimited way to use it to create business solutions! You are well on your way to being a Quick Base Builder! 
 
-_You faced a lot of challenges when you took on this new role of managing orders. You inherited a process that was inefficient, prone to errors, and heavily dependent on one person manually updating multiple spreadsheets and sharing reports with management. You took time to understand the existing process, identified specific problems to address, and defined clear objectives for improvement. And without any help from your IT department, you were able to build a custom app using Quick Base to achieve those objectives. Look at what you accomplished._
+learning summary
+{: .label .label-yellow}
 
 ## Goals
 
@@ -21,7 +21,6 @@ _You faced a lot of challenges when you took on this new role of managing orders
 |**Eliminate inefficiencies.**|Enabled team members to enter orders|Forms|
 |**Minimize effort to update data.**|Corrected the product name in the product table, which _automatically_ updated all of the orders|Tables and Relationships|
 |**Share access to reports.**|Enabled management to see the status of the buisness without asking.|Dashboard|
-
 
 You made it easy for others in your team to enter orders and view reports, you empowered them to be self-sufficient. Everyone wins!
 
