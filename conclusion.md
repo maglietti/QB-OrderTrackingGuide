@@ -20,7 +20,7 @@ learning summary
 |:-|:-|
 |**Eliminate inefficiencies.**|Enabled team members to enter orders|Forms|
 |**Minimize effort to update data.**|Corrected the product name in the product table, which _automatically_ updated all of the orders|Tables and Relationships|
-|**Share access to reports.**|Enabled management to see the status of the buisness without asking.|Dashboard|
+|**Share access to reports.**|Enabled management to see the status of the business without asking.|Dashboard|
 
 You made it easy for others in your team to enter orders and view reports, you empowered them to be self-sufficient. Everyone wins!
 
