@@ -143,6 +143,6 @@ We are looking for Product # `CA6018` which has the wrong product name `Cat 9 Ca
     5. Verify that the product name was updated 
 ~~~
 
-In just a few clicks, you updated this product name in the products table now it will be correct in all of the orders.
+In just a few clicks, you updated the product name and from now on it will be correct in all of the orders.
 
 [Next](createOrders.html){: .btn .btn-purple }
