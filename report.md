@@ -8,11 +8,11 @@ nav_order: 6
 
 Remember the reports that management asked for in the morning meeting? They want to know which customers spend the most and which products produce the most revenue. We need to create a report to answer each question. Then, we can place them together on the app home page - the dashboard - so management can access them at any time.
 
-Reports are visual displays of data. Quick Base can create pie charts, bar charts, line graphs, summary reports, and even calendars and maps. You’ve already seen the most common report Quick Base automatically creates, the table report. Each time you click a table icon in table navigation, Quick Base opens the table home page and displays the default table report for all of the table records.
+Reports are visual displays of data. Quick Base can create pie charts, bar charts, line graphs, summary reports, and even calendars and maps. You’ve already seen the most common report Quick Base automatically creates, the table report. Each time you select a table icon in table navigation, Quick Base opens the table home page and displays the default report.
 
-## Create a Table Report to summarize Orders
+## Create a Table Report to Summarize Orders
 
-Let's create a report to collect all the information from our tables and display a summary of all the orders. Management didn't ask for the report, yet, but you know that it will help everyone understand what is going on and answer questions they have asked in the past. As you think about what everyone talks about in the morning meeting, you write down the fields that the team usually has questions about.
+Let's create a report to collect all the information from our table and display a summary of all the orders. Management didn't ask for the report, yet, but you know that it will help everyone understand what is going on and answer questions they have asked in the past. As you think about what everyone talks about in the morning meeting, you write down the fields that the team usually has questions about.
 
 | Field | Source Table | Type |
 |:-|:-|:-|
@@ -24,9 +24,9 @@ Let's create a report to collect all the information from our tables and display
 
 As you thought about the list of items in an order, you decided that a **link** to the `line items` for each order works best. You also decide that you want to include the total for the entire order in the summary, you know that you have to write a formula to do that so you write down **formula** as the source. 
 
-### Add a summary column
+### Add a Summary Column
 
-Click on the `Orders` table icon in navigation and the **Orders Home** page opens. You compare the fields in the default table report to the fields you wrote down for your summary report. They are close but not the same. Specifically, you notice that there is no order summary for each order record. Let's add one. 
+Select the `Orders` table icon in the table nav bar and the **Orders Home** page opens. You compare the fields in the default table report to the fields you wrote down for your summary report. They are close but not the same. Specifically, you notice that there is no order summary for each order record. Let's add one. 
 
 There are several ways to create a summary field in Quick Base. You could define a formula like the one we used to calculate cost in the Line Items table, but there is an easier way. Because we created a table-to-table relationship between the Orders and Line Items tables, the relation itself includes a [summary field](https://help.quickbase.com/user-assistance/create_summary_field.html) feature by default. Let's use that. 
 
