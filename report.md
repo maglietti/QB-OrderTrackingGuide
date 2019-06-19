@@ -26,7 +26,7 @@ As you thought about the list of items in an order, you decided that a **link** 
 
 ### Add a Total Column
 
-Select the `Orders` table icon in the table nav bar and the **Orders Home** page opens. You compare the fields in the default table report to the fields you wrote down for your report. They are close but not the same. Specifically, you notice that there is no order total for each order record. Let's add one. 
+Select the **Orders** table icon in the table nav bar and the `Orders Home` page opens. You compare the fields in the default table report to the fields you wrote down for your report. They are close but not the same. Specifically, you notice that there is no order total for each order record. Let's add one. 
 
 There are several ways to create a total field in Quick Base. You could define a formula like the one we used to calculate cost in the Line Items table, but there is an easier way. Because we created a table-to-table relationship between the Orders and Line Items tables, the relationship itself includes a [summary field](https://help.quickbase.com/user-assistance/create_summary_field.html) feature by default. Let's use that. 
 
@@ -64,7 +64,7 @@ The relationship between the Orders table and the Line Items table looks like th
 
 ![](assets/images/image-52.png)
 
-Click the blue `Done` button to add the field to the table configuration. Then click on `Fields` in the **Table Structure** group and verify that the Total field was added to the table.
+Click the blue **Done** button to add the field to the table configuration. Then click on **Fields** in the **Table Structure** group and verify that the Total field was added to the table.
 
 ![](assets/images/image-53.png)
 
@@ -72,11 +72,11 @@ Exit the Order table settings.
 
 ### Create a Custom Table Report
 
-You're getting the hang of this! Now create a new report and configure it to display our summary field. Start by clicking on the `Orders` table in navigation to open the **Orders Home** page and expand the Reports & Charts list by clicking on **Reports & Charts**.
+You're getting the hang of this! Now create a new report and configure it to display our summary field. Start by clicking on the **Orders** table in navigation to open the **Orders Home** page and expand the Reports & Charts list by clicking on **Reports & Charts**.
 
 ![](assets/images/image-54.png)
 
-Create a new report by clicking on the `New` button next to the reports & charts search box.
+Create a new report by clicking on the **New** button next to the reports & charts search box.
 
 ![](assets/images/image-55.png)
 ![](assets/images/image-56.png)
@@ -118,7 +118,7 @@ Management is interested in knowing which customers spend the most. We have fair
 6. Select **Customer Name** and **Equal Values** for the x axis
 7. Select **Line Total** and **(summed)** for the y axis
 8. Select **Order Date** and Group by: **Quarter** for the Series
-9. Click the blue `Save` button
+9. Click the blue **Save** button
   
 
 > You know, it's **celebration** time! Congrats on creating your first data visualization!
