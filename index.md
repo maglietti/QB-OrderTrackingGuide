@@ -16,7 +16,7 @@ You are taking over for Drew who is moving to another position. Drew currently m
 
 Recently, one of your team members found that a product name is incorrect on _all_ of the customer orders, and it is causing confusion.  Some customers are even cancelling their orders. You investigate and learn that the mistake is also in the master product list which is copy and pasted into all of the orders. Correcting the product name in the product list and updating all of the existing orders is now your top priority.
 
-Before you can even think about fixing the product name in the orders, management asks for a report of the top customers and the top selling products for Q2 during the morning meeting. That information is not in an existing report, and it will take you some time to sort through the spreadsheets to create the report. You quickly realize that the order management process has outgrown the current approach, so you set out to rebuild the process to avoid issues like these issues in the future.
+Before you can even think about fixing the product name in the orders, you have a morning meeting with management. During the meeting, management asks for a report of the top spending customers by quarter and the top selling products for each quarter. That information is not in an existing report, and it will take you some time to sort through the spreadsheets to create the report. You quickly realize that the order management process has outgrown the current approach, so you set out to rebuild the process to avoid issues like these issues in the future.
 
 ## Goals
 
