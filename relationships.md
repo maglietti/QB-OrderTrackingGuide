@@ -29,15 +29,15 @@ Only create fields to hold the data that isn't in the other tables. If the data 
 
 ![](assets/images/image-25.png)
 
-~~~
-    1. Select **New Table**  
-    2. Select **From scratch - Design your own table**
-    3. Name the table: _Line Items_
-    4. Set A single record is called a: _Line Item_
-    5. Select an icon to represent your table
-    6. Provide a description 
-    7. Select **Create**
-~~~
+
+1. Select **New Table**  
+2. Select **From scratch - Design your own table**
+3. Name the table: _Line Items_
+4. Set A single record is called a: _Line Item_
+5. Select an icon to represent your table
+6. Provide a description 
+7. Select **Create**
+
 
 When the **Add New Fields** dialogue opens, add any field that is a **key** field in another table or is unique to the line item:
 
@@ -60,7 +60,7 @@ Each line item in the line items table is related to a product in the products t
 
 ![](assets/images/image-28.png)
 
-~~~
+
     1. Select **Table-to-table relationships** in the Table Structure group
     2. Select the blue **New Relationship** button  
     3. Set Line Items connects to to Products
@@ -72,7 +72,7 @@ Each line item in the line items table is related to a product in the products t
     6. Set Lookup 1 to Products-Product Name
     7. Set Lookup 2 to Products-Unit Price
     8. Select the **Create Relationship** button
-~~~
+
 
 ![](assets/images/image-29.png)
 
@@ -162,28 +162,25 @@ Oh, and since we are here, we should sum up the total for each line in the order
 Notice that the Line Total field was addedd to the table configuration. Select `Line Total` to define the formula. 
 
 ![](assets/images/image-40.png)
+1. Click in the formula editor box ~ the **Choose fields & functions** drop down appears
+2. Select Quantity from the drop down
+3. Type a * next to [Quantity] in the editor
+4. Select **Product # - Unit Price** from the drop down
+5. Verify that the formula is: _[Quantity]*[Product # - Unit Price]_
 
-~~~
-    1. Click in the formula editor box ~ the **Choose fields & functions** drop down appears
-    2. Select Quantity from the drop down
-    3. Type a * next to [Quantity] in the editor
-    4. Select **Product # - Unit Price** from the drop down
-    5. Verify that the formula says _[Quantity]*[Product # - Unit Price]_
-~~~
 
 ![](assets/images/image-41.png)
 
 > **Congratulations!** You just created your first formula field! 
 
-Remember that the formula field type is set to numeric, but we are storing currency in the field. Next we will set how the field is displayed in reports. Scroll down until you see the **Display** section appear in your browser window. 
+Remember that the formula field type is set to numeric, but we are storing currency in the field. We want the field to display as currency. So we will set how the field is displayed in reports. Scroll down until you see the **Display** section appear in your browser window. 
 
 Configure the following:
 
-~~~
-    1. Change **Decimal places** to 2
-    2. Change the  **Display as** to Currency
-    3. Select the green **Save** button in the navigation bar
-~~~
+1. Change **Decimal places** to 2
+2. Change the  **Display as** to Currency
+3. Click the green **Save** button in the navigation bar
+
 
 ![](assets/images/image-42.png)
 
@@ -193,12 +190,11 @@ You’ve created the line items table and connected it to both the Products tabl
 
 ![](assets/images/image-37.png)
 
-~~~
-    1. Select the **Import/Export** button
-    2. Select **Import into a table from a file**
-    3. Confirm **Select Table** is set to Line Items, and **Select Merge Field** is set to Record ID.
-    4. Choose the OrderDetails.xlsx file
-~~~
+1. Select the **Import/Export** button
+2. Select **Import into a table from a file**
+3. Confirm **Select Table** is set to Line Items, and **Select Merge Field** is set to Record ID.
+4. Choose the OrderDetails.xlsx file
+
 
 ![](assets/images/image-43.png)
 
@@ -206,10 +202,10 @@ Remember, we aren't importing all of the data this time, so make sure that you c
 
 ![](assets/images/image-44.png)
 
-~~~
-    1. Configure the import as shown above
-    2. Select the **Import** button
-~~~
+
+1. Configure the import as shown above
+2. Select the **Import** button
+
 
 ![](assets/images/image-45.png)
 
@@ -217,7 +213,7 @@ The resulting page indicates the number of records and fields created.
 
 ## Verify the Import
 
-Congrats! Your app now contains all the data from Drew’s spreadsheets. Select the `Line Items` table in the table nav and review that everything looks correct.
+Congrats! Your app now contains all the data from Drew’s spreadsheets. Click the `Line Items` table in the table nav and review that everything looks correct.
 
 ![](assets/images/image-46.png)
 
