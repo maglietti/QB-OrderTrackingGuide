@@ -34,6 +34,6 @@ Drew posted the spreadsheets online and sent you a link to each one, all you hav
 | [**Order Details**](/assets/data/OrderDetails.xlsx) | A more detailed list of orders, including the products and quantities on each order  |
 | [**Product List**](/assets/data/ProductList.xlsx)   | The list of products for sale, including product name, product number, and unit price  |
 
-Select the file names below to above Drew's spreadsheets to your computer.
+CLick the file names above to download Drew's spreadsheets to your computer.
 
 [Next](createApp.html){: .btn .btn-purple }

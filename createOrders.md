@@ -6,7 +6,7 @@ nav_order: 4
 
 # Storing Data in a Database
 
-Quick Base allows you to store all the information from multiple spreadsheets in one app arranged in tables. This way, a piece of information from one table is easily used in another table. We call this related data. When Drew started, all of the order information was stored in one giant spreadsheet. Over time, the spreadsheet became too large and Drew started to break it into smaller, more focused spreadsheets. Drew aligned the spreadsheets with the tasks in the order process then stored just the data required for that task in a table. If information is needed from an earlier step in the process, Drew finds it and copies it to the other spreadsheet.
+Quick Base allows you to store all the information from multiple spreadsheets in one app arranged in tables. This way, a piece of information from one table is easily used in another table. We call this related data. When Drew started, all of the order information was stored in one giant spreadsheet. Over time, the spreadsheet became too large and Drew started to break it into smaller, more focused spreadsheets. Drew aligned the spreadsheets with the tasks in the order process then stored just the data required for that task in a spreadsheet. If information is needed from an earlier step in the process, Drew finds it and copies it to the other spreadsheet.
 
 Here is how Drew broke the master spreadsheet into smaller pieces.
 
@@ -32,15 +32,15 @@ Reviewing the spreadsheet, you write down the following notes:
 
 ![](assets/images/image-17.png)
 
-~~~
-    1. Select **New Table** from the app nav bar  
-    2. Select **From scratch - Design your own table**
-    3. Name the table _Orders_
-    4. Set A single record is called an _Order_
-    5. Select an icon to represent your table
-    6. Provide a description
-    7. Select **Create**
-~~~
+
+1. Click **New Table** from the app nav bar  
+2. Click **From scratch - Design your own table**
+3. Name the table: _Orders_
+4. Set A single record is called an: _Order_
+5. Select an icon to represent your table
+6. Provide a description
+7. Click **Create**
+
 
 ![](assets/images/image-18.png)
 
@@ -48,22 +48,20 @@ Ok, now add the fields to the table.
 
 ![](assets/images/image-19.png)
 
-~~~
-    1. Create fields to hold the _Order #, Customer Name, Order Date_ 
-    2. Set the data types for each field from our notes above
-    3. Select the **Add** button
-~~~
+1. Create fields to hold the _Order #, Customer Name, Order Date_ 
+2. Set the data types for each field from our notes above
+3. Click the **Add** button
 
-Don't forget about setting the **key** field for the Orders table. 
+
+Don't forget about setting the **key field** for the Orders table. 
 
 ![](assets/images/image-20.png)
 
-~~~
-    1. Select the checkbox for Order #.
-    2. Select **Set Key**
-    3. Select the **Set Key** button in the popup  
-    4. Verify that the gold key moved to the Order # field
-~~~
+ 1. Select the checkbox for Order #
+ 2. Click **Set Key**
+ 3. Click the **Set Key** button in the popup  
+ 4. Verify that the gold key moved to the Order # field
+
 
 ## Import the Orders Spreadsheet
 
@@ -71,22 +69,23 @@ Finally, import the orders from the OrderList.xlsx file you downloaded earlier. 
 
 ![](assets/images/image-21.png)
 
-~~~
-    1. Select the **Import/Export** button
-    2. Select **Import into a table from a file**
-    3. Confirm Select Table is set to Orders and Select Merge Field is set to Order #
-    4. Review how each field will be imported to ensure it is correct
-    5. Select the **Import** button
-    6. Select **OK**
-~~~
+
+1. Click the **Import/Export** button
+2. Select **Import into a table from a file**
+3. Confirm Select Table is set to _Orders_ and Select Merge Field is set to _Order #_
+4. Click the **Import From File** button
 
 ![](assets/images/image-22.png)
+Next we will review how each field will be imported to ensure it is correct.
+1. Review the fields to be sure that the correct data is going to the correct fields
+2. Click the **Import** button
+3. Click **OK**
 
 A page shows the results: 67 data rows were read, 67 new records were created, 0 existing records were updated, and there were 0 data rows with errors. The import was successful, and your app now contains the data from the `OrderList.xlsx` file. 
 
 ![](assets/images/image-23.png)
 
-Select the `Orders` table in the table nav and review the data that was imported.
+Click the `Orders` table icon in the table nav and review the data that was imported.
 
 ![](assets/images/image-24.png)
 

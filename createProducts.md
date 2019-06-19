@@ -6,7 +6,7 @@ nav_order: 3
 
 # Create Your First Quick Base Table
 
-Quick Base stores data in tables. Tables are like spreadsheets, but better.  Understanding how tables work is the first step in your app building journey.  
+Quick Base stores data in tables. Tables are like spreadsheets, but better. Tables organize data in rows and columns and you can use data from table in another so you do not have to copy and paste or reenter data like Drew did. Understanding how tables work is the first step in your app building journey.  
 
 ## Review the Product List Spreadsheet
 
@@ -22,35 +22,32 @@ Reviewing the spreadsheet, you write down the following notes:
 | Product Name | The name of the product | text |
 | Unit Price | The price | currency |
 
-To add a table to Quick Base, first you describe what a table is going to store before filling it with data. Let's take what we learned from the spreadsheet and configure a table to hold the product information. Start by selecting the **New Table** button from the table navigation bar. 
+To add a table to Quick Base, first you describe what a table is going to store before filling it with data. Let's take what we learned from the spreadsheet and configure a table to hold the product information. Start by clicking the **New Table** button from the table navigation bar. 
 
 ![](assets/images/image-3.png)
 
-Then choose **From scratch - Design your own table.**
+Then select **From scratch - Design your own table.**
 
 ![](assets/images/image-4.png)
 
 Configure the table by giving it a name, record name, icon, and a description to describe how it's used.
 
 ![](assets/images/image-5.png)
+1. Name the table: _Products_
+2. A single record is called a: _Product_
+3. Select an icon to represent your table - we chose the first suggested icon
+4. Provide a description: _List of products we sell_
+5. Click the **Create** button
 
-~~~
-    1. Name the table: **Products**
-    2. A single record is called a: _Product_
-    3. Select an icon to represent your table - we chose the hand cart
-    4. Provide a description: _List of products we sell_
-    5. Click the **Create** button
-~~~
 
-Great! Creating the table is the first half of the configuration process. Next, add fields to the table and identify what kind of data they store. We'll add the fields based on what we observed in Drew's spreadsheet.  
+Great! Creating the table is the first half of the configuration process. Next, add fields to the table and identify what kind of data they store. Remember, fieled names are like the column headers in a spreadsheet. We'll add the fields based on what we observed in Drew's spreadsheet.  
 
 ![](assets/images/image-6.png)
 
-~~~
-    1. Fill in a field label for each of the column names from the spreadsheet
-    2. Select the data type for each field based on what we observed
-    3. Select the **Add** button
-~~~
+1. Fill in a field label for each of the column names from the spreadsheet
+2. Select the data type for each field based on what we observed
+3. Click the **Add** button
+
 
 > **Congratulations!** You just created your first Quick Base table!
 
@@ -62,22 +59,21 @@ Now you know the steps to create and configure any table that you want in Quick 
 
 Now that we have a place to store our data, let's import the products from the ProductList.xlsx file that Drew gave us.
 
-~~~ 
-    1. In the top right section of the page, select **Import/Export**
-    2. In Choose Action, select **Import into a table from a file**
-    3. Leave Select Merge Field set to Record ID#
-    4. Select the **Choose File** button and navigate to the _ProductList.xlsx_
-    5. Select the **Import From File...** button
-~~~
+1. In the top right section of the page, click **Import/Export** 
+2. In Choose Action, click **Import into a table from a file**
+3. Leave Select Merge Field set to Record ID#
+4. Click  the **Choose File** button and navigate to the _ProductList.xlsx_
+5. Click **Import From File**
+
 
 The **Import** dialogue allows you to configure how the file is imported.
 
 ![](assets/images/image-8.png)
 
-    1. The first row of Drew's spreadsheet contains the field names, make sure this is checked
-    2. We have already defined the fields and we want the data imported to them
-    3. Look at the data and field names and make sure they match the spreadsheet
-    3. Select the **Import** button
+1. The first row of Drew's spreadsheet contains the field names, make sure this is checked
+2. We have already defined the fields and we want the data imported to them
+3. Look at the data and field names and make sure they match the spreadsheet
+3. Click the **Import** button
 
 ![](assets/images/image-9.png)
 
@@ -97,11 +93,11 @@ By default, Quick Base automatically creates a `Record ID#` field for every tabl
 
 Here's how:
 
-~~~
-    1. Select the icon for the Products table in the table nav bar
-    2. Select the gear icon in the blue box next to the **Products > Products Home** breadcrumb
-    3. Select **Fields (8)** in the **Table Structure** group
-~~~
+
+1. Click the icon for the Products table in the table nav bar
+2. Click  the gear icon in the blue box next to the **Products > Products Home** breadcrumb
+3. Click  **Fields (8)** in the **Table Structure** group
+
 
 Let's set the `Product #` field to be the **Key** for the Products table.
 
@@ -111,11 +107,11 @@ Select the checkbox for `Product #`.
 
 ![](assets/images/image-12.png)
 
-Select `Set Key`.
+Click `Set Key`.
 
 ![](assets/images/image-13.png)
 
-Select the `Set Key` button in the pop-up.  
+CLick the `Set Key` button in the pop-up.  
 
 ![](assets/images/image-14.png)
 
@@ -135,13 +131,13 @@ We are looking for Product # `CA6018` which has the wrong product name `Cat 9 Ca
 
 ![](assets/images/image-16.png)
 
-~~~
-    1. Select the `Grid Edit` button in the app nav bar 
-    2. Double click on the wrong product name
-    3. Correct the product name
-    4. Select the green Save button
-    5. Verify that the product name was updated 
-~~~
+
+1. Click the **Grid Edit** button in the app nav bar 
+2. Double click the wrong product name
+3. Correct the product name
+4. Click the green Save button
+5. Verify that the product name was updated 
+
 
 In just a few clicks, you updated the product name and from now on it will be correct in all of the orders.
 
