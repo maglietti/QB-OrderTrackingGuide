@@ -56,7 +56,7 @@ This time we accept the default `Record ID#` as the **key field** for the Line I
 
 ## Relate the Line Items and Products Tables
 
-Each line item in the line items table is related to a product in the products table using the `Product #` field. To avoid typing errors, Quick Base will use this relationship to look up the valid `Product #` and put them into a drop down list. Choosing an entry from a list is always easier then typing it in by hand. To make this work, connect the Line Items table to the Products table using a table-to-table relationship.
+Each line item in the Line Items table is related to a product in the Products table using the `Product #` field. To avoid typing errors, Quick Base will use this relationship to look up the valid `Product #` and put them into a drop down list. Choosing an entry from a list is always easier then typing it in by hand. To make this work, connect the Line Items table to the Products table using a table-to-table relationship.
 
 ![](assets/images/image-28.png)
 
@@ -75,14 +75,14 @@ Configure the relationship.
 Set the `Product #` as the reference field.
 
 ![](assets/images/image-30.png)
-1. Set the line items reference field to Product #
+1. Set the line items reference field to _Product #_
 2. Click **Next**
 
 Identify the lookup fields. 
 
 ![](assets/images/image-31.png)
-1. Set Lookup 1 to Products-Product Name
-2. Set Lookup 2 to Products-Unit Price
+1. Set Lookup 1 to _Products-Product Name_
+2. Set Lookup 2 to _Products-Unit Price_
 3. Click the **Create Relationship** button
 
 > **Congratulations!** You just created your first table-to-table relationship! 
@@ -128,18 +128,21 @@ Identify the lookup fields.
 
 Click `Fields` from the Table Structure group and let's take a look at what happened in when we created those relationships. 
 
-![](assets/images/image-38.png)
 
-Notice ... 
+
+Notice how long some of the field names are. 
+
+**NEED NEW SCREENSHOT**
 
 Let's clean up some of those field names so that they aren't so long. Here is the process for updating the fields.
 
+**NEED NEW SCREENSHOT**
 
 1. Click the field name that you want to change
 2. Change the Label the name listed below
 3. Click the green **Save** button
 
-
+Update each of the fields below.
 |From|To|
 |:---|:-|
 |Product # - Product Name | Product Name|
@@ -157,7 +160,7 @@ Oh, and since we are here, we should sum up the total for each line in the order
 3. Select type: _Formula - Numeric_
 4. Click **Add**
 
-Notice that the Line Total field was addedd to the table configuration. Quick Base uses [functions](https://login.quickbase.com/db/6ewwzuuj?a=td) field names (which are represented in square brackets) and mathematical operators in formulas. The common mathematical operators are:
+Notice that the Line Total field was addedd to the table configuration. Quick Base uses [functions](https://login.quickbase.com/db/6ewwzuuj?a=td), field names (which are represented in square brackets), and mathematical operators in formulas. The common mathematical operators are:
 | Operator| Symbol |
 |:-|:-|
 | Addition | + |
