@@ -143,6 +143,7 @@ Let's clean up some of those field names so that they aren't so long. Here is th
 3. Click the green **Save** button
 
 Update each of the fields below.
+
 |From|To|
 |:---|:-|
 |Product # - Product Name | Product Name|
@@ -160,7 +161,10 @@ Oh, and since we are here, we should sum up the total for each line in the order
 3. Select type: _Formula - Numeric_
 4. Click **Add**
 
-Notice that the Line Total field was addedd to the table configuration. Quick Base uses [functions](https://login.quickbase.com/db/6ewwzuuj?a=td), field names (which are represented in square brackets), and mathematical operators in formulas. The common mathematical operators are:
+Notice that the Line Total field was addedd to the table configuration. Quick Base uses [functions](https://login.quickbase.com/db/6ewwzuuj?a=td), field names (which are represented in square brackets), and mathematical operators in formulas. 
+
+The common mathematical operators are:
+
 | Operator| Symbol |
 |:-|:-|
 | Addition | + |
@@ -180,19 +184,20 @@ Let's create the formula now. We want to multiply the quantity by the unit price
 2. Select Quantity field from the dropdown
 3. Type a * next to [Quantity] in the editor
 4. Select **Unit Price** from the dropdown
-5. Verify that the formula is: _[Quantity]*[Unit Price]_
+5. Verify that the formula is: `[Quantity] * [Unit Price]`
 
 
 > **Congratulations!** You just created your first formula field! 
 
 Remember that the formula field type is set to numeric, and we are storing currency in the field. We want the field to display as currency. So we will set how the field is displayed in reports. Scroll down until you see the **Display** section appear in your browser window. 
+
 ![](assets/images/image-37.png)
+
 Configure the following:
 
 1. Change **Decimal places** to 2
 2. Change the  **Display as** to Currency
 3. Click the green **Save** button in the navigation bar
-
 
 ## Import the Line Items Data
 
