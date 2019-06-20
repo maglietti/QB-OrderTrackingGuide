@@ -85,7 +85,7 @@ A page shows the results: 67 data rows were read, 67 new records were created, 0
 
 ![](assets/images/image-23.png)
 
-Click the `Orders` table icon in the table nav and review the data that was imported.
+Click the **Orders** table icon in the table nav and review the data that was imported.
 
 ![](assets/images/image-24.png)
 
