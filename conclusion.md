@@ -36,4 +36,4 @@ You made it easy for others in your team to enter orders and view reports, you e
 
 ## Next steps
 
-What other problems can you think of that you can solve with Quick Base? Take a minute to jot them down. Do you have an idea already? Go ahaed and start building your solution. If you need help, you can go to [Quick Base University](https://university.quickbase.com/), [Quick Base Community](https://community.quickbase.com/quickbase), or [Quick Base Help](https://help.quickbase.com/user-assistance/intro.html).
+What other problems can you think of that you can solve with Quick Base? Take a minute to jot them down. Do you have an idea already? Go ahead and start building your solution. If you need help, you can go to [Quick Base University](https://university.quickbase.com/), [Quick Base Community](https://community.quickbase.com/quickbase), or [Quick Base Help](https://help.quickbase.com/user-assistance/intro.html).
