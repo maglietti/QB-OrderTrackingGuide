@@ -12,11 +12,11 @@ Hello and welcome to the Quick Base getting started guide. This guide walks you 
 
 ## Scenario
 
-You are taking over for Drew who is moving to another position. Drew currently manages the order process, and plays an integral part in the workflow of the office. When an order comes in, information is manually entered into or copied among several spreadsheets. Drew keeps the spreadsheets on a laptop, making Drew a bottleneck for entering orders, providing status updates, or producing analytics for management. Everyone wants to take this opportunity to evolve the order process and remove the dependency on any one person to complete orders.
+You are taking over for Drew who is moving to another position. Drew currently manages the order process, and plays an integral part in the workflow of the office. When an order comes in, Drew manually enters or copies information into several spreadsheets. Drew keeps the spreadsheets on a laptop, making Drew a bottleneck for entering orders, providing status updates, or producing analytics for management. Everyone wants to take this opportunity to evolve the order process and remove the dependency on any one person to complete orders.
 
-Recently, one of your team members found that a product name is incorrect on _all_ of the customer orders, and it is causing confusion.  Some customers are even cancelling their orders. You investigate and learn that the mistake is also in the master product list which is copy/pasted into all of the orders. Correcting the  product name in the product list and updating all of the existing orders is now your top priority.
+Recently, one of your team members found that a product name is incorrect on _all_ of the customer orders, and it is causing confusion.  Some customers are even cancelling their orders. You investigate and learn that the mistake is also in the master product list which is copy and pasted into all of the orders. Correcting the product name in the product list and updating all of the existing orders is now your top priority.
 
-Before you can even think about fixing the product name in the orders, management asks for a report of the top customers and the top selling products for Q2 during the morning meeting. That information is not already in a report, and it will take you some time to sort through the spreadsheets to make one. You quickly realize that the order management process has outgrown the current approach, so you set out to rebuild the process to avoid issues like these issues in the future.
+Before you can even think about fixing the product name in the orders, you have a morning meeting with management. During the meeting, management asks for a report of the top spending customers by quarter and the top selling products overall. That information is not in an existing report, and it will take you some time to sort through the spreadsheets to create the report. You quickly realize that the order management process has outgrown the current approach, so you set out to rebuild the process to avoid issues like these issues in the future.
 
 ## Goals
 
@@ -34,6 +34,6 @@ Drew posted the spreadsheets online and sent you a link to each one, all you hav
 | [**Order Details**](/assets/data/OrderDetails.xlsx) | A more detailed list of orders, including the products and quantities on each order  |
 | [**Product List**](/assets/data/ProductList.xlsx)   | The list of products for sale, including product name, product number, and unit price  |
 
-Click on the file names below to download Drew's spreadsheets to your computer.
+Click the file names above to download Drew's spreadsheets to your computer.
 
 [Next](createApp.html){: .btn .btn-purple }
