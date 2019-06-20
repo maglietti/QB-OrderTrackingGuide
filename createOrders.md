@@ -52,6 +52,7 @@ Ok, now add the fields to the table.
 2. Set the data types for each field from our notes above
 3. Click the **Add** button
 
+Another use for the **key** field is to make sure that duplicates aren't created when adding data to the database. In our case, all of the order numbers are unique, creating an order with the same order number would cause confusion. Set the `Order #` field to be the **key** in the Orders table to make sure that we don't create a duplicate order numbers accidently. 
 
 Don't forget about setting the **key field** for the Orders table. 
 
