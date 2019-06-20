@@ -6,7 +6,7 @@ nav_order: 7
 
 # App Dashboard
 
-Dashboards give people one convenient place to see or access key information. It is what people see when they first sign into an app. You can create different dashboards for different roles. We have three reports from earlier, lets get them into the dashboard. 
+Dashboards give people one convenient place to see or access key information. It is what people see when they first sign into an app. You can create different dashboards for different roles. For now, we are going to create one dashboard for everyone. We have three reports from earlier, lets get them into the dashboard. 
 
 ![](assets/images/image-67.png)
 
