@@ -11,7 +11,7 @@ Taking a recommendation from a friend, you decide to try building an app using Q
 > <b>Note:</b> Please log into your Quick Base account and open the application in another window so that you can easily go between this guide and Quick Base.
 > If you haven't already done so, please close all dialogues and navigate to the **My Apps** tab. 
 
-The `My Apps` page in Quick Base is the central repository for all of the apps that you create or have access to. You can always return here by clicking the **My Apps** tab in the app bar.
+The `My Apps` page in Quick Base is the central repository for all the apps that you create or have access to. You can always return here by clicking the **My Apps** tab in the app bar.
 
 ![](assets/images/image-1.png)
 
