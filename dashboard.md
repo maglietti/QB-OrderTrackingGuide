@@ -1,59 +1,67 @@
 ---
 layout: default
 title: Create a Dashboard
-nav_order: 10
+nav_order: 7
 ---
 
-# Create a dashboard
+# App Dashboard
 
-Dashboards give people one convenient place to see or access key information. It is what people see when they first sign into an app. You can create different dashboards for different roles. 
+Dashboards give people one convenient place to see or access key information. It is what people see when they first sign into an app. You can create different dashboards for different roles. We have three reports from earlier, lets get them into the dashboard. 
 
-Put both reports you created for the Vice President on the dashboard so she can easily access this information from her own computer at any time. 
+![](assets/images/image-67.png)
 
-## Add Reports to the Dashboard
+## Add the Orders Summary Report
 
-Follow the steps below to turn the app Home page into the main dashboard:
+The orders summary table report is a good way for anyone to see information about orders and drill into the line item tht the customer selected. It is the foundation of our dashboard, so let's configure a home for it first.
 
-![](assets/images/createDashboard.png)
+![](assets/images/image-68.png)
 
-    1. Select the app Home page.
-    2. Select Customize This Page. A gallery of widgets is displayed. 
-    3. Drag and drop the Report or Chart widget from the top of the page to a spot on the page below. 
-    4. When you release the mouse, look to the upper-right to choose the report to display. Reports and charts are grouped by table. Locate the Line Items table in the list and select Customers by Spend. 
-    5. Drag and drop the Report or Chart widget from above to the spot next to the Customers by Spend pie chart. Without detailed instructions, set this widget to the Products by Spend report. 
- 
-## View the new dashboard. 
- 
-![](assets/images/defaultDashboard.png)
+1. Click **Customize this Page**
+2. Click and drag the **Report or Chart** widget onto your page
+3. Click the icon gear
+4. Select the **Orders Summary** report
 
-    1. If one report is a lot smaller than the other, hover your mouse between the reports to make the resizer appear. Drag it left or right to resize the reports to your liking. 
 
-## Add Buttons to the Dashboard
+That looks awesome! Now every time your **Order Tracking** app is opened, the report will automatically update and display. 
 
-![](assets/images/dashboardBtn.png)
+** ADD SCREENSHOT**
 
-Add a button that lets users create new orders directly from the dashboard:
+## Add the Customer by Spend Report
 
-    1. Drag and drop the Button Bar widget from the top to a spot above the reports.
-    2. A  popup window displays. At the top, there are three options for button type: New Record, Report, or Page. Leave the default value of New Record. 
-    3. In the New Record dropdown, select Order. 
-    4. Close this popup window.  
-    5. Hover your mouse over the widget’s top right corner to make the gear icon appear. Select this gear and deselect Show a Title.
+Next in line is the bar chart displaying the customer spend report. 
 
-Add a button that lets users view a report showing all products:
+![](assets/images/image-69.png)
 
-    1. Drag and drop another Button Bar widget from the top to a spot to the left of the New Order button. 
-    2. At the top of the popup window, select Report at the top.
-    3. Set Report to Products > List All. 
-    4. Close the popup window.
-    5. Put your cursor over this List All button to make the pencil icon appear. Select this pencil icon and change the label to All Products and select the green checkmark to save the change.
-    6. Hover your mouse over the widget’s top right corner to make the gear icon appear. Select this gear and click the blue swatch to change the button color to another color, like magenta. 
-    7. Close the popup window. 
-    8. Select Save.
+1. Click and drag the **Report or Chart** widget onto your page
+2. Click the icon gear
+3. Select the **Customer by Spend** chart
 
-![](assets/images/finalDashboard.png)
+## Add the Product by Revenue Report
 
-Look at that! You now have a single dashboard that allows users to view how much customers are spending, what products are selling the most, a button to the view the product list, and a button to create a new order. Now that’s convenience!
+Last but not least is the product revenue summary report. 
 
+![](assets/images/image-70.png)
+
+1. Click and drag the **Report or Chart** widget onto your page
+2. Click the icon gear
+3. Select the **Product by Revenue** report
+
+Looking good!
+![](assets/images/image-72.png)
+
+## Add a Create New Order Button
+
+Hey, while we are here and have the dashboard editor open, why don't we go ahead and add a button that lets users create new orders directly from the dashboard. That will make it a lot easier for your team to get right into the order entry form with just one click!
+
+![](assets/images/image-74.png)
+
+1. Drag and drop the **Button Bar** widget from the top to a spot above the reports.
+2. A  popup window displays. At the top, there are three options for button type: New Record, Report, or Page. Leave the default value of **New Record**. 
+3. In the New Record dropdown, select **Order**. 
+4. Close this popup window.  
+5. Hover your mouse over the widget top right corner to make the gear icon appear. Select this gear and deselect **Show a Title.**
+6. Click **Save**
+
+Look at that! You now have a single dashboard that allows users to view how much customers are spending, what products are selling the most, and a button to create a new order. Now that’s convenience!
 
 [Next](conclusion.html){: .btn .btn-purple }
