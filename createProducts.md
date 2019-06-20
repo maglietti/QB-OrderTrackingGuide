@@ -131,7 +131,7 @@ Ok, almost done with the Products table. Our last step is to take a look what wa
 
 ## Update a Record
 
-We are looking for Product # `CA6018` which has the wrong product name `Cat 9 Cable 10ft`, this is really a Cat 6 cable. With the Table Report open, we quickly spot the wrong product name, we can correct the product name in the product list from the home page. 
+We are looking for Product # `CA8018` which has the wrong product name `Cat 9 Cable 10ft`, this is really a Cat 8 cable. With the Table Report open, we quickly spot the wrong product name, we can correct the product name in the product list from the home page. 
 
 ![](assets/images/image-16.png)
 
