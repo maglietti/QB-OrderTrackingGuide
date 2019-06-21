@@ -4,11 +4,11 @@ title: Create Products Table
 nav_order: 3
 ---
 
-# Create Your First Quick Base Table
+# Create your first Quick Base table
 
 Quick Base stores data in tables. Tables are like spreadsheets, but better. Tables organize data in rows and columns, and you can use data from one table in another, so you don't have to copy and paste or reenter data like Drew did. Understanding how tables work is the first step in your app building journey.  
 
-## Review the Product List Spreadsheet
+## Review the Product List spreadsheet
 
 Drew provided three spreadsheet files, and since our first goal is to correct a product name, let's start with the Product List spreadsheet. Opening the `ProductList.xlsx` file, we see that it has data in three columns, and the name of each column is stored in the first row.  
 
@@ -55,15 +55,15 @@ Now you know the steps to create and configure any table that you want in Quick 
 
 ![](assets/images/image-7.png)
 
-## Import the Products Spreadsheet
+## Import the Products spreadsheet
 
 Now that we have a place to store our data, let's import the products from the ProductList.xlsx file that Drew gave us.
 
 1. In the top right section of the page, click **Import/Export** 
 2. In Choose Action, click **Import into a table from a file**
 3. Leave Select Merge Field set to Record ID#
-4. Click  the **Choose File** button and navigate to the _ProductList.xlsx_
-5. Click **Import from File**
+4. Click  the **Choose file** button and navigate to the _ProductList.xlsx_
+5. Click **Import from file**
 
 
 The **Import** dialogue allows you to configure how the file is imported.
@@ -77,7 +77,7 @@ The **Import** dialogue allows you to configure how the file is imported.
 
 ![](assets/images/image-9.png)
 
-Once all of the data is loaded, the import results page opens to show the results: 14 rows were read, 14 records were added, no records were updated, and there were no data rows with errors. 
+Once all the data is loaded, the import results page opens to show the results: 14 rows were read, 14 records were added, no records were updated, and there were no data rows with errors. 
 
 ![](assets/images/image-10.png)
 
@@ -87,17 +87,15 @@ As an aside, what do you think would happen if you accidentally uploaded that sa
 
 ![](assets/images/dupData.png)
 
-YUP! (and we don't want that!) Quick Base requires that each table contains one field to use as a unique value for each record. This field is called the _key field_. If the uploaded data contains the same value of an item in the key field, it will update the record instead of adding a new one.  In our example, if Product # is the key field and the table already contains a record with `Product #` QC2019, Quick Base will not add another record with this value during an upload.  Instead, it will update the existing record.  This is a convenient way to quickly update values of many existing records, such as when you need to update pricing.
+Yes, and we don't want that! Quick Base requires that each table contains one field to use as a unique value for each record. This field is called the _key field_. If the uploaded data contains the same value of an item in the key field, it'll update the record instead of adding a new one. In our example, if Product # is the key field and the table already contains a record with `Product #` QC2019, Quick Base won't add another record with this value during an upload. Instead, it'll update the existing record. This is a convenient way to quickly update values of many existing records, such as when you need to update pricing.
 
-By default, Quick Base automatically creates a `Record ID#` field for every table and sets it as the **key field.**  This is useful if your data does not contain a field that will always contain unique values.  But because our Product # is always a unique SKU, we can make that the key field and avoid duplicate entries in the future.
+By default, Quick Base automatically creates a `Record ID#` field for every table and sets it as the **key field.** This is useful if your data doesn't contain a field that will always contain unique values. But because our Product # is always a unique SKU, we can make that the key field and avoid duplicate entries in the future.
 
 Here's how:
 
-
 1. Click the icon for the Products table in the table nav bar
-2. Click  the gear icon in the blue box next to the **Products > Products Home** breadcrumb
-3. Click  **Fields (8)** in the **Table Structure** group
-
+2. Click the gear icon in the blue box next to the **Products > Products Home** breadcrumb
+3. Click **Fields (8)** in the **Table Structure** group
 
 Let's set the `Product #` field to be the **key** for the Products table.
 
@@ -119,15 +117,15 @@ Verify that the gold key moved to the `Product #` field then click **Exit Settin
 
 Your future self will thank you for setting this up now. 
 
-## View the Table Report
+## View the table report
 
-Ok, almost done with the Products table. Our last step is to take a look what was imported and update that pesky product name! Start by clicking the the Products table icon to view the homepage for this table. Note that whenever you click a table button in the table nav bar, it will display the default _table report_ on the table's **Home** page. 
+Ok, almost done with the Products table. Our last step is to take a look at what was imported and update that mislabeled product name! Start by clicking the Products table icon to view the homepage for this table. Note that whenever you click a table button in the table nav bar, it will display the default _table report_ on the table's **Home** page. 
 
 ![](assets/images/image-15.png)
 
 ## Update a Record
 
-We are looking for Product # `CA8018` which has the wrong product name `Cat 9 Cable 10ft`, this is really a Cat 8 cable. With the table report open, we quickly spot the wrong product name, we can correct the product name in the product list from the home page. 
+We are looking for Product # `CA8018` which has the wrong product name `Cat 9 Cable 10ft`, this is really a Cat 8 cable. With the table report open, we quickly spot the wrong product name. We can correct the product name in the product list from the home page. 
 
 ![](assets/images/image-16.png)
 
@@ -139,6 +137,6 @@ We are looking for Product # `CA8018` which has the wrong product name `Cat 9 Ca
 5. Verify that the product name was updated 
 
 
-In just a few clicks, you updated the product name and from now on it will be correct in all of the orders.
+In just a few clicks, you updated the product name. From now on it will be correct in all of the orders.
 
 [Next](createOrders.html){: .btn .btn-purple }
