@@ -16,7 +16,7 @@ Here is how Drew broke the master spreadsheet into smaller pieces.
 | Create an order | Start a new order and register it in the system | OrderList.xlsx | Orders | 
 | Add item to order | List the items delivered in the order | LineItems.xlsx | Order Items |
 
-## Review the Orders spreadsheet
+## Review the orders spreadsheet
 
 Moving through Drew's spreadsheets, the next in line is the `OrderList.xlsx` spreadsheet. Again, we'll start by taking a look at the spreadsheet and understanding what's stored in it. Open the `OrdersList.xlsx` file and take notes about its structure.
 
@@ -61,7 +61,7 @@ Don't forget about setting the **key field** for the Orders table.
  3. Click the **Set Key** button in the popup  
  4. Verify that the gold key moved to the Order # field
 
-## Import the Orders spreadsheet
+## Import the orders spreadsheet
 
 Finally, import the orders from the OrderList.xlsx file you downloaded earlier. Just like before, the import dialogue box opens and gives you the opportunity to verify that the data will stored correctly. Review the information and import your data.
 

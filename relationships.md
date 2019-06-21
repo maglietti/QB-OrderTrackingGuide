@@ -21,7 +21,7 @@ Drew kept track of items for each order in the `OrderDetails.xlsx` spreadsheet. 
 
 This time, as you review the spreadsheet, you recognize field names that are shared with the other spreadsheets. This is the information that Drew copied and pasted from spreadsheet to spreadsheet. By defining table relationships in Quick Base, you can automatically get the related information from one table to display on another. Quick Base calls this a **table-to-table** relationship. Let's do that now. 
 
-## Create the Line Items table
+## Create the line items table
 
 The steps to create the `Line Items` table are a little different from what we did with the `Products` and `Orders` tables. Some fields in the `Line Items` table will have relationships with information stored in either the `Products` or `Orders` table, so we don't have to import that data from the spreadsheet.
 
