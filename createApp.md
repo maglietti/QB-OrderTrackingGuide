@@ -13,7 +13,7 @@ Taking a recommendation from a friend, you decide to try building an app using Q
 
 The `My Apps` page in Quick Base is the central repository for all the apps that you create or have access to. You can always return here by clicking the **My Apps** tab in the app bar.
 
-![](assets/images/image-1.png)
+![](assets/images/image-0.png)
 
 Let's take the plunge and create our first app:  
 1. From the My Apps page, click the large <b>Create new app</b> button   
@@ -24,6 +24,9 @@ Let's take the plunge and create our first app:
 6. Select a color for the app
 7. Click <b>Create app</b>
 
+![](assets/images/image-1.png)
+
+![](assets/images/image-1a.png)
 
 ![](assets/images/image-2.png)
 

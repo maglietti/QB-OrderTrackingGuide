@@ -22,30 +22,33 @@ Reviewing the spreadsheet, you write down the following notes:
 | Product Name | The name of the product | text |
 | Unit Price | The price | currency |
 
-To add a table to Quick Base, first you describe what a table is going to store before filling it with data. Let's take what we learned from the spreadsheet and configure a table to hold the product information. Start by clicking the **New Table** button from the table navigation bar. 
+To add a table to Quick Base, first you describe what a table is going to store before filling it with data. Let's take what we learned from the spreadsheet and configure a table to hold the product information. Let's get started!
+1. Click the **New Table** button from the table navigation bar. 
+2. Select **From scratch — Design your own table.**
 
 ![](assets/images/image-3.png)
-
-Then select **From scratch — Design your own table.**
 
 ![](assets/images/image-4.png)
 
 Configure the table by giving it a name, record name, icon, and a description to describe how it's used.
 
-![](assets/images/image-5.png)
 1. Name the table: _Products_
 2. A single record is called a: _Product_
 3. Select an icon to represent your table — we chose the first suggested icon
 4. Provide a description: _List of products we sell_
 5. Click the **Create** button
 
+![](assets/images/image-5.png)
+
 Great! Creating the table is the first half of the configuration process. Next, add fields to the table and identify what kind of data they store. Remember, field names are like the column headers in a spreadsheet. We'll add the fields based on what we observed in Drew's spreadsheet.  
 
-![](assets/images/image-6.png)
+
 
 1. Fill in a field label for each of the column names from the spreadsheet
 2. Select the data type for each field based on what we observed
 3. Click the **Add** button
+
+![](assets/images/image-6.png)
 
 > **Congratulations!** You just created your first Quick Base table!
 
