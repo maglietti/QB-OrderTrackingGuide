@@ -4,9 +4,9 @@ title: Create Orders Table
 nav_order: 4
 ---
 
-# Storing Data in a Database
+# Storing data in a database
 
-Quick Base allows you to store all the information from multiple spreadsheets in one app arranged in tables. This way, a piece of information from one table is easily used in another table. We call this related data. When Drew started, all of the order information was stored in one giant spreadsheet. Over time, the spreadsheet became too large and Drew started to break it into smaller, more focused spreadsheets. Drew aligned the spreadsheets with the tasks in the order process then stored just the data required for that task in a spreadsheet. If information is needed from an earlier step in the process, Drew finds it and copies it to the other spreadsheet.
+Quick Base allows you to store all the information from multiple spreadsheets in one app arranged in tables. This way, a piece of information from one table is easily used in another table. We call this related data. When Drew started, all of the order information was stored in one giant spreadsheet. Over time, the spreadsheet became too large, so Drew started to break it into smaller, more focused spreadsheets. Drew aligned the spreadsheets with the tasks in the order process, then stored just the data required for that task in a spreadsheet. If information was needed from an earlier step in the process, Drew found it and copied it to the other spreadsheet.
 
 Here is how Drew broke the master spreadsheet into smaller pieces.
 
@@ -16,9 +16,9 @@ Here is how Drew broke the master spreadsheet into smaller pieces.
 | Create an order | Start a new order and register it in the system | OrderList.xlsx | Orders | 
 | Add item to order | List the items delivered in the order | LineItems.xlsx | Order Items |
 
-## Review the Orders Spreadsheet
+## Review the Orders spreadsheet
 
-Moving through Drew's spreadsheets, the next in line is the `OrderList.xlsx` spreadsheet. Again, we'll start by taking a look at the spreadsheet and understanding what is stored in it. Open the `OrdersList.xlsx` file and take notes about its structure.
+Moving through Drew's spreadsheets, the next in line is the `OrderList.xlsx` spreadsheet. Again, we'll start by taking a look at the spreadsheet and understanding what's stored in it. Open the `OrdersList.xlsx` file and take notes about its structure.
 
 ![](assets/images/ordersTable.png)
 
@@ -30,8 +30,9 @@ Reviewing the spreadsheet, you write down the following notes:
 | Customer Name | The customer's name| text |
 | Order Number | The order number | text |
 
-![](assets/images/image-17.png)
+Let's take what we learned from the spreadsheet and configure a table to hold the order information. 
 
+![](assets/images/image-17.png)
 
 1. Click **New Table** from the app nav bar  
 2. Click **From scratch - Design your own table**
@@ -40,7 +41,6 @@ Reviewing the spreadsheet, you write down the following notes:
 5. Select an icon to represent your table
 6. Provide a description
 7. Click **Create**
-
 
 ![](assets/images/image-18.png)
 
@@ -52,7 +52,6 @@ Ok, now add the fields to the table.
 2. Set the data types for each field from our notes above
 3. Click the **Add** button
 
-
 Don't forget about setting the **key field** for the Orders table. 
 
 ![](assets/images/image-20.png)
@@ -62,13 +61,11 @@ Don't forget about setting the **key field** for the Orders table.
  3. Click the **Set Key** button in the popup  
  4. Verify that the gold key moved to the Order # field
 
-
-## Import the Orders Spreadsheet
+## Import the Orders spreadsheet
 
 Finally, import the orders from the OrderList.xlsx file you downloaded earlier. Just like before, the import dialogue box opens and gives you the opportunity to verify that the data will stored correctly. Review the information and import your data.
 
 ![](assets/images/image-21.png)
-
 
 1. Click the **Import/Export** button
 2. Select **Import into a table from a file**
@@ -76,7 +73,8 @@ Finally, import the orders from the OrderList.xlsx file you downloaded earlier. 
 4. Click the **Import From File** button
 
 ![](assets/images/image-22.png)
-Next we will review how each field will be imported to ensure it is correct.
+
+Next we'll review how each field will be imported to ensure it's correct.
 1. Review the fields to be sure that the correct data is going to the correct fields
 2. Click the **Import** button
 3. Click **OK**
