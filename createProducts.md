@@ -42,8 +42,6 @@ Configure the table by giving it a name, record name, icon, and a description to
 
 Great! Creating the table is the first half of the configuration process. Next, add fields to the table and identify what kind of data they store. Remember, field names are like the column headers in a spreadsheet. We'll add the fields based on what we observed in Drew's spreadsheet.  
 
-
-
 1. Fill in a field label for each of the column names from the spreadsheet
 2. Select the data type for each field based on what we observed
 3. Click the **Add** button
@@ -66,9 +64,14 @@ Now that we have a place to store our data, let's import the products from the P
 4. Click the **Choose file** button and navigate to the _ProductList.xlsx_
 5. Click **Import from file**
 
+![](assets/images/image-7a.png)
+
 The **Import** dialogue allows you to configure how the file is imported.
 
+
 ![](assets/images/image-8.png)
+
+Now that we have set the configuration let's look at how it will be iimported.
 
 1. The first row of Drew's spreadsheet contains the field names. Make sure this is checked.
 2. We've already defined the fields and we want the data imported to them
@@ -81,7 +84,7 @@ Once all the data is loaded, the import results page opens to show the results: 
 
 ![](assets/images/image-10.png)
 
-> **Success!** You've imported your first spreadsheet to Quick Base.
+> **Success!** You've imported your first spreadsheet to Quick Base. 
 
 As an aside, what do you think would happen if you accidentally uploaded that same spreadsheet with the same list of products into the app a second time? Would every product appear in the table twice, like shown here?
 
@@ -91,29 +94,33 @@ Yes, and we don't want that! Quick Base requires that each table contains 1 fiel
 
 By default, Quick Base automatically creates a `Record ID#` field for every table and sets it as the **key field.** This is useful if your data doesn't contain a field that will always contain unique values. But because our Product # is always a unique SKU, we can make that the key field and avoid duplicate entries in the future.
 
-Here's how:
+We are already on the Products table so we just need to go to the Products table's settings to change it. Here's how:
 
-1. Click the icon for the Products table in the table nav bar
-2. Click the gear icon in the blue box next to the **Products > Products Home** breadcrumb
-3. Click **Fields (8)** in the **Table Structure** group
 
-Let's set the `Product #` field to be the **key** for the Products table.
+1. Click the gear icon in the blue box next to the **Products > Products Home** breadcrumb
+2. Click **Fields (8)** in the **Table Structure** group
+
+
+![](assets/images/image-10a.png)
 
 ![](assets/images/image-11.png)
 
-Select the checkbox for **Product #**.
+Let's set the **Product #** field to be the **key** for the Products table.
+
+
+1. Select the checkbox for **Product #**
+2. Click **Set Key**
+3. Click the **Set Key** button in the pop-up  
+4. Verify that the gold key moved to the _Product #_ field 
+5. Click **Exit Settings**.
 
 ![](assets/images/image-12.png)
 
-Click **Set Key**.
-
 ![](assets/images/image-13.png)
-
-Click the **Set Key** button in the pop-up.  
 
 ![](assets/images/image-14.png)
 
-Verify that the gold key moved to the `Product #` field then click **Exit Settings**.
+
 
 Your future self will thank you for setting this up now. 
 
@@ -127,7 +134,7 @@ Ok, almost done with the Products table. Our last step is to take a look at what
 
 We're looking for Product # `CA8018` which has the wrong product name `Cat 9 Cable 10ft`. It should be a Cat 8 cable. With the table report open, we quickly spot the wrong product name. We can correct the product name in the product list from the home page. 
 
-![](assets/images/image-16.png)
+
 
 1. Click the **Grid Edit** button in the app nav bar 
 2. Double click the wrong product name
@@ -135,6 +142,12 @@ We're looking for Product # `CA8018` which has the wrong product name `Cat 9 Cab
 4. Click the green **Save** button
 5. Verify that the product name was updated 
 
-In just a few clicks, you updated the product name. From now on, it'll be correct in all the orders.
+![](assets/images/image-15b.png)
+
+![](assets/images/image-16.png)
+
+![](assets/images/image-16a.png)
+
+In just a few clicks, you updated the product name. From now on, it'll be correct in all the orders. Notice that the updated record is now at the top of the table. This is because the default sort order the **last modified by** field.
 
 [Next](createOrders.html){: .btn .btn-purple }
