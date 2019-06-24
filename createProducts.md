@@ -76,7 +76,7 @@ Now that we have set the configuration let's look at how it will be iimported.
 1. The first row of Drew's spreadsheet contains the field names. Make sure this is checked.
 2. We've already defined the fields and we want the data imported to them
 3. Look at the data and field names and make sure they match the spreadsheet
-3. Click the **Import** button
+4. Click the **Import** button
 
 ![](assets/images/image-9.png)
 
