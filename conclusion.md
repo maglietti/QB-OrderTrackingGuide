@@ -14,7 +14,7 @@ You've learned a lot in a short time! You know know how to:
 * Use relationships to eliminate inefficiencies by requiring less data entry
 * Create formulas and summary fields to use in reports
 * Create awesome reports and charts for your team and management
-* Create simple and easy-to-access dashboards with reports, charts, and buttons
+* Create simple and easy-to-access dashboards with reports, charts, and buttons on the app homepage
 
 ## Goals
 
